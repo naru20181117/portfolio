@@ -1,8 +1,26 @@
-# naru_portfolio
+Naru_portfolio
+====
 
-### This is the [site.](https://naruhiro-portfolio.firebaseapp.com/)
+Overview
 
+## Description
 
+This is the portfolio site that you can check my profile, to connect to my other product which is on github, to get in touch through the Home or Twitter accout.
+
+## Demo
+### [This is the site.](https://naruhiro-portfolio.firebaseapp.com/)
+[[![Image from Gyazo](https://i.gyazo.com/da369ef9d418d939bcdab7a6cbd0fdae.png)](https://gyazo.com/da369ef9d418d939bcdab7a6cbd0fdae)](https://naruhiro-portfolio.firebaseapp.com/)
+
+## Dependency
+vue:          2.6.10
+vue/cli:      4.1.2
+bootstrap-vue:2.2.0
+core-js:      3.4.4
+jquery:       1.9.1
+vue-router:   3.1.3
+firebase:     7.11.0
+
+---
 ## Project setup
 ```
 npm install
@@ -23,5 +41,16 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Licence
+
+[MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
+
+## Author
+
+[Twitter Account](https://twitter.com/1026NT)
+
+
+
+
+
+
