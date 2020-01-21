@@ -4,55 +4,10 @@
       <div class="container">
         <h2>Used Tech</h2>
         <ul class="tech-icons">
-          <li>
-            <b-badge pill variant="light" class="icon-badge">HTML5</b-badge>
+          <li v-for="badge in badges" v-bind:key="badge.name">
+            <b-badge pill variant="light" class="icon-badge">{{badge.name}}</b-badge>
             <br />
-            <img src="https://cdn.svgporn.com/logos/html-5.svg" alt class="icon-image" />
-          </li>
-          <li>
-            <b-badge pill variant="light" class="icon-badge">CSS3</b-badge>
-            <br />
-            <img src="https://cdn.svgporn.com/logos/css-3.svg" alt class="icon-image" />
-          </li>
-          <li>
-            <b-badge pill variant="light" class="icon-badge">Ruby</b-badge>
-
-            <br />
-            <img src="https://cdn.svgporn.com/logos/ruby.svg" alt class="icon-image" />
-          </li>
-          <li>
-            <b-badge pill variant="light" class="icon-badge">
-              Ruby
-              on
-              Rails
-            </b-badge>
-            <br />
-            <img src="https://cdn.svgporn.com/logos/rails.svg" alt class="icon-image" />
-          </li>
-          <li>
-            <b-badge pill variant="light" class="icon-badge">Javascript</b-badge>
-            <br />
-            <img src="https://cdn.svgporn.com/logos/javascript.svg" alt class="icon-image" />
-          </li>
-          <li>
-            <b-badge pill variant="light" class="icon-badge">Vue.js</b-badge>
-            <br />
-            <img src="https://cdn.svgporn.com/logos/vue.svg" alt class="icon-image" />
-          </li>
-          <li>
-            <b-badge pill variant="light" class="icon-badge">Bootstrap</b-badge>
-            <br />
-            <img src="https://cdn.svgporn.com/logos/bootstrap.svg" alt class="icon-image" />
-          </li>
-          <li>
-            <b-badge pill variant="light" class="icon-badge">Sass</b-badge>
-            <br />
-            <img src="https://cdn.svgporn.com/logos/sass.svg" alt class="icon-image" />
-          </li>
-          <li>
-            <b-badge pill variant="light" class="icon-badge">VBAマクロ</b-badge>
-            <br />
-            <img src="@/assets/img/excel.svg" alt class="icon-image" />
+            <img :src="'./assets/img/skill_icon/' + badge.name + '.svg'" alt class="icon-image" />
           </li>
         </ul>
         <ul>
@@ -68,7 +23,7 @@
             <img src="https://cdn.svgporn.com/logos/linux-tux.svg" alt class="icon-image" />
           </li>
           <li>
-            <b-badge pill variant="light" class="icon-badge">AWSサーバ</b-badge>
+            <b-badge pill variant="light" class="icon-badge">AWS</b-badge>
             <br />
             <img src="https://cdn.svgporn.com/logos/aws.svg" alt class="icon-image" />
           </li>
@@ -109,19 +64,48 @@
 </template>
 
 <script>
-// @ is an alias to /src
-// import SKILL from "@/components/Skill.vue";
-
-// export default {
-//   name: "skill",
-//   components: {
-//     SKILL
-//   }
-// };
 export default {
-  name: "profile",
-  data() {
-    return {};
+  data: function() {
+    return {
+      badges: [
+        {
+          name: "html-5"
+        },
+        {
+          name: "css-3"
+        },
+        {
+          name: "ruby"
+        },
+        {
+          name: "rails"
+        },
+        {
+          name: "javascript"
+        },
+        {
+          name: "vue-js"
+        },
+        {
+          name: "bootstrap"
+        },
+        {
+          name: "sass"
+        },
+        { name: "VBA" }
+      ]
+      // badges: [
+      // { icon: require("https://cdn.svgporn.com/logos/html-5.svg") },
+      // { icon: require("https://cdn.svgporn.com/logos/css-3.svg") },
+      // { icon: require("https://cdn.svgporn.com/logos/ruby.svg") },
+      // { icon: require("https://cdn.svgporn.com/logos/rails.svg") },
+      // { icon: require("https://cdn.svgporn.com/logos/javascript.svg") },
+      // { icon: require("https://cdn.svgporn.com/logos/vue.svg") },
+      // { icon: require("https://cdn.svgporn.com/logos/bootstrap.svg") },
+      // { icon: require("https://cdn.svgporn.com/logos/sass.svg") },
+      // { icon: require("@/assets/img/skill_icon/excel.svg") }
+      // ]
+    };
   }
 };
 </script>

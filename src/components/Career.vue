@@ -17,7 +17,7 @@
                 </tr>
                 <tr>
                   <td class="history">2018/4</td>
-                  <td class="history-section">青山にあるSIerのBusinessDivelopment部に配属</td>
+                  <td class="history-section">青山にあるSIerのBusinessDevelopment部に配属</td>
                 </tr>
                 <tr>
                   <td class="history">
@@ -58,17 +58,7 @@
 </template>
 
 <script>
-// @ is an alias to /src
-// import Career from "@/components/Career.vue";
-
-// export default {
-//   name: "career",
-//   components: {
-//     Career
-//   }
-// };
 export default {
-  name: "profile",
   data() {
     return {};
   }

@@ -73,7 +73,7 @@
               </a>
             </b-col>
             <b-col md="6">
-              <b-card-body title="Portfolio">
+              <b-card-body title="ポートフォリオサイト">
                 <b-card-text>
                   Vue.js, Bootstrapを使用
                   Vueを学習するために作られたサイト
@@ -121,17 +121,7 @@
 </template>
 
 <script>
-// @ is an alias to /src
-// import Portfolio from "@/components/Portfolio.vue";
-
-// export default {
-//   name: "portfolio",
-//   components: {
-//     Portfolio
-//   }
-// };
 export default {
-  name: "profile",
   data() {
     return {};
   }
