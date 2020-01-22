@@ -9,16 +9,16 @@ This is the portfolio site that you can check my profile, to connect to my other
 
 ## Demo
 ### [This is the site.](https://naruhiro-portfolio.firebaseapp.com/)
-[![Image from Gyazo](https://i.gyazo.com/da369ef9d418d939bcdab7a6cbd0fdae.png)](https://naruhiro-portfolio.firebaseapp.com/)]
+[![Image from Gyazo](https://i.gyazo.com/da369ef9d418d939bcdab7a6cbd0fdae.png)](https://naruhiro-portfolio.firebaseapp.com/)
 
 ## Dependency
-vue:          2.6.10
-vue/cli:      4.1.2
-bootstrap-vue:2.2.0
-core-js:      3.4.4
-jquery:       1.9.1
-vue-router:   3.1.3
-firebase:     7.11.0
+- vue:          2.6.10
+- vue/cli:      4.1.2
+- bootstrap-vue:2.2.0
+- core-js:      3.4.4
+- jquery:       1.9.1
+- vue-router:   3.1.3
+- firebase:     7.11.0
 
 ---
 ## Project setup
