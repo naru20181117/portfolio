@@ -9,7 +9,7 @@ This is the portfolio site that you can check my profile, to connect to my other
 
 ## Demo
 ### [This is the site.](https://naruhiro-portfolio.firebaseapp.com/)
-[[![Image from Gyazo](https://i.gyazo.com/da369ef9d418d939bcdab7a6cbd0fdae.png)](https://gyazo.com/da369ef9d418d939bcdab7a6cbd0fdae)](https://naruhiro-portfolio.firebaseapp.com/)
+[![Image from Gyazo](https://i.gyazo.com/da369ef9d418d939bcdab7a6cbd0fdae.png)](https://naruhiro-portfolio.firebaseapp.com/)]
 
 ## Dependency
 vue:          2.6.10
