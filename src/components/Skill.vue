@@ -4,58 +4,31 @@
       <div class="container">
         <h2>Used Tech</h2>
         <ul class="tech-icons">
-          <li v-for="badge in badges" v-bind:key="badge.name">
+          <li v-for="badge in first_badges" v-bind:key="badge">
             <b-badge pill variant="light" class="icon-badge">{{badge.name}}</b-badge>
             <br />
-            <img :src="'./assets/img/skill_icon/' + badge.name + '.svg'" alt class="icon-image" />
+            <img
+              :src="'https://cdn.svgporn.com/logos/' + badge.path + '.svg'"
+              alt
+              class="icon-image"
+            />
+          </li>
+          <li>
+            <b-badge pill variant="light" class="icon-badge">VBA</b-badge>
+            <br />
+            <img src="@/assets/img/skill_icon/VBA.svg" alt class="icon-image" />
           </li>
         </ul>
-        <ul>
+        <ul class="tech-icons">
           <h2>Touched Etc.</h2>
-          <li>
-            <b-badge pill variant="light" class="icon-badge">Debian</b-badge>
+          <li v-for="badge in second_badges" v-bind:key="badge">
+            <b-badge pill variant="light" class="icon-badge">{{badge.name}}</b-badge>
             <br />
-            <img src="https://cdn.svgporn.com/logos/debian.svg" alt class="icon-image" />
-          </li>
-          <li>
-            <b-badge pill variant="light" class="icon-badge">Linux</b-badge>
-            <br />
-            <img src="https://cdn.svgporn.com/logos/linux-tux.svg" alt class="icon-image" />
-          </li>
-          <li>
-            <b-badge pill variant="light" class="icon-badge">AWS</b-badge>
-            <br />
-            <img src="https://cdn.svgporn.com/logos/aws.svg" alt class="icon-image" />
-          </li>
-          <li>
-            <b-badge pill variant="light" class="icon-badge">NGINX</b-badge>
-            <br />
-            <img src="https://cdn.svgporn.com/logos/nginx.svg" alt class="icon-image" />
-          </li>
-          <li>
-            <b-badge pill variant="light" class="icon-badge">Capistrano</b-badge>
-            <br />
-            <img src="https://cdn.svgporn.com/logos/capistrano.svg" alt class="icon-image" />
-          </li>
-          <li>
-            <b-badge pill variant="light" class="icon-badge">rubocop</b-badge>
-            <br />
-            <img src="https://cdn.svgporn.com/logos/rubocop.svg" alt class="icon-image" />
-          </li>
-          <li>
-            <b-badge pill variant="light" class="icon-badge">Docker</b-badge>
-            <br />
-            <img src="https://cdn.svgporn.com/logos/docker-icon.svg" alt class="icon-image" />
-          </li>
-          <li>
-            <b-badge pill variant="light" class="icon-badge">Vim</b-badge>
-            <br />
-            <img src="https://cdn.svgporn.com/logos/vim.svg" alt class="icon-image" />
-          </li>
-          <li>
-            <b-badge pill variant="light" class="icon-badge">vscode</b-badge>
-            <br />
-            <img src="https://cdn.svgporn.com/logos/visual-studio-code.svg" alt class="icon-image" />
+            <img
+              :src="'https://cdn.svgporn.com/logos/' + badge.path + '.svg'"
+              alt
+              class="icon-image"
+            />
           </li>
         </ul>
       </div>
@@ -67,44 +40,78 @@
 export default {
   data: function() {
     return {
-      badges: [
+      first_badges: [
         {
-          name: "html-5"
+          name: "HTML",
+          path: "html-5"
         },
         {
-          name: "css-3"
+          name: "CSS3",
+          path: "css-3"
         },
         {
-          name: "ruby"
+          name: "Ruby",
+          path: "ruby"
         },
         {
-          name: "rails"
+          name: "Ruby on Rails",
+          path: "rails"
         },
         {
-          name: "javascript"
+          name: "Javascript",
+          path: "javascript"
         },
         {
-          name: "vue-js"
+          name: "Vue.js",
+          path: "vue"
         },
         {
-          name: "bootstrap"
+          name: "Bootstrap",
+          path: "bootstrap"
         },
         {
-          name: "sass"
+          name: "Sass",
+          path: "sass"
+        }
+      ],
+      second_badges: [
+        {
+          name: "Debian",
+          path: "debian"
         },
-        { name: "VBA" }
+        {
+          name: "Linux",
+          path: "linux-tux"
+        },
+        {
+          name: "AWS",
+          path: "aws"
+        },
+        {
+          name: "NGINX",
+          path: "nginx"
+        },
+        {
+          name: "Capistrano",
+          path: "capistrano"
+        },
+        {
+          name: "Rubocop",
+          path: "rubocop"
+        },
+        {
+          name: "Docker",
+          path: "docker-icon"
+        },
+        {
+          name: "Vim",
+          path: "vim"
+        },
+        {
+          name: "VS code",
+          path: "visual-studio-code"
+        }
       ]
-      // badges: [
-      // { icon: require("https://cdn.svgporn.com/logos/html-5.svg") },
-      // { icon: require("https://cdn.svgporn.com/logos/css-3.svg") },
-      // { icon: require("https://cdn.svgporn.com/logos/ruby.svg") },
-      // { icon: require("https://cdn.svgporn.com/logos/rails.svg") },
-      // { icon: require("https://cdn.svgporn.com/logos/javascript.svg") },
-      // { icon: require("https://cdn.svgporn.com/logos/vue.svg") },
-      // { icon: require("https://cdn.svgporn.com/logos/bootstrap.svg") },
-      // { icon: require("https://cdn.svgporn.com/logos/sass.svg") },
-      // { icon: require("@/assets/img/skill_icon/excel.svg") }
-      // ]
     };
   }
 };
