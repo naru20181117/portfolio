@@ -32,7 +32,7 @@
       </li>
     </ul>
 
-    <h3>Contact Form</h3>
+    <h3 class="contact_form">Contact Form</h3>
     <ul>
       <li>
         <div>
@@ -135,7 +135,11 @@ p {
 .situation-title {
   margin: 30px;
 }
+.contact_form {
+  margin: 30px;
+}
 .collapse_bottom {
   background-color: orange;
+  font-size: 1.5rem;
 }
 </style>

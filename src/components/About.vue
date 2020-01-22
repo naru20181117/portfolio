@@ -17,12 +17,12 @@
             </p>
           </div>
           <div class="profile_img flexbox">
-            <img src="../assets/img/my_image.jpg" alt />
+            <img src="../assets/img/my_pic.jpg" alt class="my_pic" />
           </div>
         </div>
         <div class="about_box">
           <div class="about_img flexbox">
-            <img src="../assets/img/my_pic.jpg" alt class="my_pic" />
+            <img src="../assets/img/my_image.jpg" alt />
           </div>
           <div class="flexbox">
             <dl class="detail-profile">
@@ -45,17 +45,7 @@
 </template>
 
 <script>
-// @ is an alias to /src
-// import About from "@/components/About.vue";
-
-// export default {
-//   name: "about",
-//   components: {
-//     About
-//   }
-// };
 export default {
-  name: "profile",
   data() {
     return {};
   }
@@ -125,7 +115,6 @@ a {
   max-width: 300px;
   max-height: 450px;
   border-radius: 50%;
-  margin-left: 60px;
 }
 // .flexbox-right {
 //   margin: 20px;
