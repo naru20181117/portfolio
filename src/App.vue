@@ -9,16 +9,17 @@
       <hnav></hnav>
     </div>
     <router-view />
+    <transition name="fade">
+      <a href="#" v-scroll-to="'#top'" class="scroll-top" v-show="isShow">TOP</a>
+    </transition>
     <fnav></fnav>
+
     <div class="sns-box">
       <a href="https://twitter.com/1026NT" target="_blank" class="sns-link">
         twitter
         <i class="fab fa-twitter-square"></i>
       </a>
-      <a href="https://github.com/naru20181117" target="_blank" class="sns-link">
-        github
-        <i class="fab github-icon"></i>
-      </a>
+      <a href="https://github.com/naru20181117" target="_blank" class="sns-link">github</a>
     </div>
     <footer>
       <div class="copyright-box">©️ 2020 naru All Rights Reserved.</div>
@@ -29,6 +30,14 @@
 <script>
 import HeaderNav from "./components/parts/HeaderNav";
 import FooterNav from "./components/parts/FooterNav";
+import Vue from "vue";
+import VueScrollTo from "vue-scrollto";
+Vue.use(VueScrollTo, {
+  container: "body",
+  duration: 500,
+  easing: "ease"
+});
+
 export default {
   name: "app",
   components: {
@@ -37,8 +46,26 @@ export default {
   },
   data() {
     return {
-      //
+      scrollY: 0
     };
+  },
+  mounted() {
+    // スクロールを取得
+    window.addEventListener("scroll", this.onScroll);
+    window.addEventListener("load", () => {
+      this.onScroll();
+    });
+  },
+  computed: {
+    isShow() {
+      return this.scrollY > 200 ? true : false;
+    }
+  },
+  methods: {
+    // スクロール値の取得
+    onScroll() {
+      this.scrollY = window.pageYOffset;
+    }
   }
 };
 </script>
@@ -63,5 +90,27 @@ export default {
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+.scroll-top {
+  position: fixed;
+  /* left: 50%;
+  transform: translate(-50%, 0); */
+  right: 32px;
+  bottom: 32px;
+  background-color: #a0a0a0;
+  opacity: 0.7;
+  padding: 10px 16px;
+  border-radius: 32px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

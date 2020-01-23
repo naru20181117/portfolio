@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "naruhiro-portfolio"
+    "default": "naruhiro-portfolio",
+    "staging": "alert-condition-252207"
   }
 }

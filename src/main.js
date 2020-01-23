@@ -6,22 +6,20 @@ import router from './router'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import './assets/scss/style.scss'
-
 // import {
 //   library
 // } from '@fortawesome/fontawesome-svg-core'
 // import {
-//   faCoffee
+//   faUserSecret
 // } from '@fortawesome/free-solid-svg-icons'
 // import {
 //   FontAwesomeIcon
 // } from '@fortawesome/vue-fontawesome'
 
-// library.add(faCoffee)
+
+// library.add(faUserSecret)
 
 // Vue.component('font-awesome-icon', FontAwesomeIcon)
-
-// library.add(fas, fab, far)
 
 Vue.config.productionTip = false
 
