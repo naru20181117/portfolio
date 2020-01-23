@@ -9,10 +9,11 @@
       <hnav></hnav>
     </div>
     <router-view />
+
+    <fnav></fnav>
     <transition name="fade">
       <a href="#" v-scroll-to="'#top'" class="scroll-top" v-show="isShow">TOP</a>
     </transition>
-    <fnav></fnav>
 
     <div class="sns-box">
       <a href="https://twitter.com/1026NT" target="_blank" class="sns-link">
