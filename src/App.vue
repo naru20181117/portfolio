@@ -20,7 +20,10 @@
         twitter
         <i class="fab fa-twitter-square"></i>
       </a>
-      <a href="https://github.com/naru20181117" target="_blank" class="sns-link">github</a>
+      <a href="https://github.com/naru20181117" target="_blank" class="sns-link">
+        github
+        <i class="fab github-icon"></i>
+      </a>
     </div>
     <footer>
       <div class="copyright-box">©️ 2020 naru All Rights Reserved.</div>
