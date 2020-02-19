@@ -32,7 +32,7 @@
                 <tr>
                   <td class="history">
                     <p class="history-left">2019/09</p>
-                    <p class="history-right">~現在</p>
+                    <p class="history-right">~2020/01</p>
                   </td>
                   <td class="history-section">
                     FijordBootCampに所属
@@ -41,12 +41,14 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="history"></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td class="history"></td>
-                  <td></td>
+                  <td class="history">
+                    <p class="history-left">2020/01</p>
+                    <p class="history-right">~2020/2</p>
+                  </td>
+                  <td class="history-section">
+                    スタートアップ企業にてRails開発に参画
+                    <br />メンバー2名にてローンチ前の開発に従事
+                  </td>
                 </tr>
               </tbody>
             </table>
