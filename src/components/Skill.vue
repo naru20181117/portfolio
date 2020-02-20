@@ -72,6 +72,10 @@ export default {
         {
           name: "Sass",
           path: "sass"
+        },
+        {
+          name: "WordPress",
+          path: "wordpress-icon"
         }
       ],
       second_badges: [
