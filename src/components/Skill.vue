@@ -66,16 +66,16 @@ export default {
           path: "vue"
         },
         {
+          name: "Nuxt.js",
+          path: "nuxt"
+        },
+        {
           name: "Bootstrap",
           path: "bootstrap"
         },
         {
           name: "Sass",
           path: "sass"
-        },
-        {
-          name: "WordPress",
-          path: "wordpress-icon"
         }
       ],
       second_badges: [
