@@ -1,7 +1,7 @@
 <template>
   <div id="hello">
     <div class="image">
-      <img src="../assets/logo.png" alt />
+      <img src="../assets/logo.png" alt class="lp-img"/>
     </div>
 
     <div class="about_vue">
@@ -82,12 +82,15 @@ hello {
 }
 .image {
   vertical-align: middle;
-  margin: 0;
-  padding: 0 0 50px 50px;
-  /* width: 400px; */
-}
-.img {
   margin: 0 auto;
+  padding-top: 80px;
+  width:75%;
+}
+.lp-img {
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+  align: center;
 }
 h3 {
   margin: 60px 0 0;
