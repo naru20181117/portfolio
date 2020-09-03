@@ -26,10 +26,6 @@
           <input type="checkbox" v-model="autoplay" /> 5秒ごとに自動で文字を更新
         </label>
       </li>
-      <li>
-        <code>transition-group</code> の
-        <code>v-move</code> を利用してみた
-      </li>
     </ul>
 
     <h3 class="contact_form">Contact Form</h3>
