@@ -164,6 +164,34 @@
           </b-row>
         </b-card>
       </div>
+      <div class="card">
+        <b-card no-body class="overflow-hidden" style="max-width: 540px;">
+          <b-row no-gutters>
+            <b-col md="6">
+              <b-card-body title="メモ管理アプリ">
+                <b-card-text>
+                  Rails/JS<br>
+                  Ruby/Railsを盛り沢山使ったアプリ
+                </b-card-text>
+                <b-button
+                  href="https://github.com/naru20181117/onetask"
+                  target="_blank"
+                  variant="warning"
+                >Go Github</b-button>
+              </b-card-body>
+            </b-col>
+            <b-col md="6">
+              <a href="https://onetask1.herokuapp.com" target="_blank">
+                <b-card-img
+                  src="https://i.gyazo.com/b0726715def42c1c9fc59464e8ac42a9.gif"
+                  alt="Image from Gyazo"
+                  class="rounded-10"
+                ></b-card-img>
+              </a>
+            </b-col>
+          </b-row>
+        </b-card>
+      </div>
     </div>
   </div>
 </template>
