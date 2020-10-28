@@ -2,6 +2,7 @@ import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 import App from './App.vue'
 import router from './router'
+import VueYoutube from 'vue-youtube'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -23,6 +24,7 @@ import './assets/scss/style.scss'
 
 Vue.config.productionTip = false
 
+Vue.use(VueYoutube)
 Vue.use(BootstrapVue)
 
 new Vue({

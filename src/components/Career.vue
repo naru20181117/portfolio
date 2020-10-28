@@ -50,10 +50,21 @@
                     <br />メンバー2名にてローンチ前の開発に従事
                   </td>
                 </tr>
+                <tr>
+                  <td class="history">
+                    <p class="history-left">2020/03</p>
+                    <p class="history-right">~現在</p>
+                  </td>
+                  <td class="history-section">
+                    Rubyコミッターの所属する受託開発会社に所属
+                    <br />日本最大級のECサイトの開発に従事（公用語英語）
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
         </article>
+        <youtube :video-id="videoId" />
       </div>
     </section>
   </div>
@@ -62,7 +73,9 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      videoId: '0ELboMxzSZA'
+    };
   }
 };
 </script>
