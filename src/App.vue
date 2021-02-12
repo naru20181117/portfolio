@@ -74,47 +74,47 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
 
-#nav {
-  padding: 30px;
-}
+  #nav {
+    padding: 30px;
+  }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  #nav a {
+    font-weight: bold;
+    color: #2c3e50;
+  }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-.scroll-top {
-  position: fixed;
-  /* left: 50%;
-  transform: translate(-50%, 0); */
-  right: 32px;
-  bottom: 32px;
-  background-color: #a0a0a0;
-  opacity: 0.7;
-  padding: 10px 16px;
-  border-radius: 32px;
-  font-weight: bold;
-  font-size: 20px;
-  color: #000;
-}
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
-}
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
+  #nav a.router-link-exact-active {
+    color: #42b983;
+  }
+  .scroll-top {
+    position: fixed;
+    /* left: 50%;
+    transform: translate(-50%, 0); */
+    right: 32px;
+    bottom: 32px;
+    background-color: #a0a0a0;
+    opacity: 0.7;
+    padding: 10px 16px;
+    border-radius: 32px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+  }
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.5s;
+  }
+  .fade-enter,
+  .fade-leave-to {
+    opacity: 0;
+  }
 }
 </style>

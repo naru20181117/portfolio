@@ -9,15 +9,18 @@
               <tbody>
                 <tr>
                   <td class="history">2015/4</td>
-                  <td class="history-section">在学中に1年間カナダでワーキングホリデー経験</td>
+                  <td class="history-section">🇨🇦 在学中に1年間カナダでワーキングホリデー経験</td>
                 </tr>
                 <tr>
                   <td class="history">2015/8</td>
-                  <td class="history-section">現地旅行代理店でのインターンシップ経験</td>
+                  <td class="history-section">🚘 現地旅行代理店でのインターンシップ経験</td>
                 </tr>
                 <tr>
                   <td class="history">2018/4</td>
-                  <td class="history-section">青山にあるSIerのBusinessDevelopment部に配属</td>
+                  <td class="history-section">
+                    🖥青山にあるSIerのBusinessDevelopment部に配属
+                    <br />（営業/人事/総務担当）
+                  </td>
                 </tr>
                 <tr>
                   <td class="history">
@@ -25,7 +28,7 @@
                     <p class="history-right">~2019/9</p>
                   </td>
                   <td class="history-section">
-                    ネットワークエンジニアとしてグローバルと国内のネットワーク案件に参画
+                    🧑🏻‍💻 ネットワークエンジニアとしてグローバルと国内のネットワーク案件に参画
                     <br />Ciscoコマンドからサーバ言語、マクロ等を扱う。AWSからオンプレサーバーまでの保守を担当
                   </td>
                 </tr>
@@ -35,7 +38,7 @@
                     <p class="history-right">~2020/01</p>
                   </td>
                   <td class="history-section">
-                    FijordBootCampに所属
+                    📚 FijordBootCampに所属
                     <br />
                     <a href="https://bootcamp.fjord.jp/practices" target="_blank">フィヨルドブートキャンプのコース内容</a>
                   </td>
@@ -46,8 +49,8 @@
                     <p class="history-right">~2020/2</p>
                   </td>
                   <td class="history-section">
-                    スタートアップ企業にてRails開発に参画
-                    <br />メンバー2名にてローンチ前の開発に従事
+                    🌱 スタートアップ企業にて販売管理システム開発に参画
+                    <br />メンバー2名にてローンチ前の開発に従事（Rails)
                   </td>
                 </tr>
                 <tr>
@@ -56,15 +59,27 @@
                     <p class="history-right">~現在</p>
                   </td>
                   <td class="history-section">
+                    <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ruby/ruby.png" width="20px">
                     Rubyコミッターの所属する受託開発会社に所属
                     <br />日本最大級のECサイトの開発に従事（公用語英語）
+                  </td>
+                </tr>
+                <tr>
+                  <td class="history">
+                    <p class="history-left">2020/12</p>
+                    <p class="history-right">~現在</p>
+                  </td>
+                  <td class="history-section">
+                    <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png" width="20px">
+                    とある検索サイトシステムの開発
+                    <br />メンバー3名（Rails ✖ Vue）
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
         </article>
-        <youtube :video-id="videoId" />
+        <youtube class="video" :video-id="videoId" />
       </div>
     </section>
   </div>
@@ -80,61 +95,66 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 #careers {
   margin-top: 150px;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-}
-h1,
-h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-.history_h2 {
-  text-align: left;
-}
-.flexbox-left {
-  margin: 0 100px 0 0;
-}
-.history_box {
-  padding-left: 40px;
-}
-td {
-  padding: 5px;
-  vertical-align: top;
-}
-article {
-  padding: 40px 0;
-}
-.textLeft {
-  margin: 0;
-}
-.textRight {
-  text-align: right;
-}
-.history {
-  padding-right: 50px;
-}
-.history-section {
-  text-align: left;
-}
-.history-left {
-  margin-bottom: 0;
-}
-.history-right {
-  margin-bottom: 0;
+
+  h1,
+  h2 {
+    font-weight: normal;
+  }
+  article {
+    padding: 40px 0;
+    .history_h2 {
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
+    .history_box {
+      padding-left: 40px;
+      ul {
+        list-style-type: none;
+        padding: 0;
+        li {
+          display: inline-block;
+          margin: 0 10px;
+        }
+      }
+
+      a {
+        color: #42b983;
+      }
+
+      tr {
+        margin: 40px 0;
+      }
+      td {
+        padding: 10px 0 10px 50px;
+        vertical-align: top;
+      }
+
+      .history {
+        padding-right: 50px;
+
+        p {
+          margin-bottom: 0;
+        }
+        .history-left {
+          padding-right: 20px;
+        }
+        .history-right {
+          padding-left: 20px;
+        }
+      }
+
+      .history-section {
+        text-align: left;
+      }
+    }
+  }
 }
 </style>

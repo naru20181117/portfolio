@@ -16,11 +16,10 @@ export default {
     return {
       timer: null,
       index: 0,
-      // オリジナルメッセージ
       original: [
-        "新卒からIT業界に従事 (4年目の年) ネットワークエンジニアも経験",
-        "Web系への転身を決意し、Rails学習をスタート!エンジニアのコミュニティ運営や勉強会を始める！！",
-        "1月〜2月スタートアップにてRails開発を経験後 3月よりRubyエンジニアとして就労中！！！"
+        "新卒からIT業界に従事 (4年目) \nネットワークエンジニアも経験",
+        "Rubyを中心とするエンジニア。\nエンジニアのコミュニティを運営している",
+        "販売管理システム、ECサイト、検索サイトの開発を経験。\n業務委託を中心に活躍中！"
       ],
       // 分解したメッセージ
       messages: [],
@@ -83,7 +82,6 @@ export default {
   display: inline-block;
   min-width: 0.3em;
 }
-/* トランジション用スタイル */
 .v-enter-active,
 .v-leave-active,
 .v-move {

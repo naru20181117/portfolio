@@ -67,11 +67,11 @@ export default {
         },
         {
           name: "Nuxt.js",
-          path: "nuxt"
+          path: "nuxt-icon"
         },
         {
-          name: "Bootstrap",
-          path: "bootstrap"
+          name: "Firebase",
+          path: "firebase"
         },
         {
           name: "Sass",
@@ -121,26 +121,30 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 #skills {
   margin-top: 150px;
-}
-ul {
-  margin: 50px 0;
-  padding: 0;
-}
-li {
-  margin: 15px;
-  display: inline-block;
-  list-style: none;
-}
-.icon-badge {
+
+  ul {
+    margin: 50px 0;
+    padding: 0;
+
+    li {
+    margin: 15px;
+    display: inline-block;
+    list-style: none;
+    }
+  }
+
+  .icon-badge {
   font-size: 1.5rem;
   word-wrap: break-word;
-}
-.icon-image {
-  height: 90px;
-  width: 110px;
-  margin-top: 20px;
+  }
+
+  .icon-image {
+    height: 90px;
+    width: 110px;
+    margin-top: 20px;
+  }
 }
 </style>

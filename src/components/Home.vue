@@ -21,7 +21,6 @@
       </li>
       <li>
         <TextAnime :autoplay="autoplay" />
-
         <label>
           <input type="checkbox" v-model="autoplay" /> 5秒ごとに自動で文字を更新
         </label>
