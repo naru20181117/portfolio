@@ -1,87 +1,85 @@
 <template>
   <div id="careers">
-    <section class="career_section">
-      <div class="container">
-        <article>
-          <h2 class="history_h2">My History</h2>
-          <div class="history_box">
-            <table class="history_table">
-              <tbody>
-                <tr>
-                  <td class="history">2015/4</td>
-                  <td class="history-section">🇨🇦 在学中に1年間カナダでワーキングホリデー経験</td>
-                </tr>
-                <tr>
-                  <td class="history">2015/8</td>
-                  <td class="history-section">🚘 現地旅行代理店でのインターンシップ経験</td>
-                </tr>
-                <tr>
-                  <td class="history">2018/4</td>
-                  <td class="history-section">
-                    🖥青山にあるSIerのBusinessDevelopment部に配属
-                    <br />（営業/人事/総務担当）
-                  </td>
-                </tr>
-                <tr>
-                  <td class="history">
-                    <p class="history-left">2018/09</p>
-                    <p class="history-right">~2019/9</p>
-                  </td>
-                  <td class="history-section">
-                    🧑🏻‍💻 ネットワークエンジニアとしてグローバルと国内のネットワーク案件に参画
-                    <br />Ciscoコマンドからサーバ言語、マクロ等を扱う。AWSからオンプレサーバーまでの保守を担当
-                  </td>
-                </tr>
-                <tr>
-                  <td class="history">
-                    <p class="history-left">2019/09</p>
-                    <p class="history-right">~2020/01</p>
-                  </td>
-                  <td class="history-section">
-                    📚 FijordBootCampに所属
-                    <br />
-                    <a href="https://bootcamp.fjord.jp/practices" target="_blank">フィヨルドブートキャンプのコース内容</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="history">
-                    <p class="history-left">2020/01</p>
-                    <p class="history-right">~2020/2</p>
-                  </td>
-                  <td class="history-section">
-                    🌱 スタートアップ企業にて販売管理システム開発に参画
-                    <br />メンバー2名にてローンチ前の開発に従事（Rails)
-                  </td>
-                </tr>
-                <tr>
-                  <td class="history">
-                    <p class="history-left">2020/03</p>
-                    <p class="history-right">~現在</p>
-                  </td>
-                  <td class="history-section">
-                    <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ruby/ruby.png" width="20px">
-                    Rubyコミッターの所属する受託開発会社に所属
-                    <br />日本最大級のECサイトの開発に従事（公用語英語）
-                  </td>
-                </tr>
-                <tr>
-                  <td class="history">
-                    <p class="history-left">2020/12</p>
-                    <p class="history-right">~現在</p>
-                  </td>
-                  <td class="history-section">
-                    <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png" width="20px">
-                    とある検索サイトシステムの開発
-                    <br />メンバー3名（Rails ✖ Vue）
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </article>
-        <youtube class="video" :video-id="videoId" />
-      </div>
-    </section>
+    <div class="career_section">
+      <article>
+        <h2 class="history_h2">My History</h2>
+        <div class="history_box">
+          <table class="history_table">
+            <tbody>
+              <tr>
+                <td class="history">2015/4</td>
+                <td class="history-section">🇨🇦 在学中に1年間カナダでワーキングホリデー経験</td>
+              </tr>
+              <tr>
+                <td class="history">2015/8</td>
+                <td class="history-section">🚘 現地旅行代理店でのインターンシップ経験</td>
+              </tr>
+              <tr>
+                <td class="history">2018/4</td>
+                <td class="history-section">
+                  🖥青山にあるSIerのBusinessDevelopment部に配属
+                  <br />（営業/人事/総務担当）
+                </td>
+              </tr>
+              <tr>
+                <td class="history">
+                  <p class="history-left">2018/09</p>
+                  <p class="history-right">~2019/9</p>
+                </td>
+                <td class="history-section">
+                  🧑🏻‍💻 ネットワークエンジニアとしてグローバルと国内のネットワーク案件に参画
+                  <br />Ciscoコマンドからサーバ言語、マクロ等を扱う。AWSからオンプレサーバーまでの保守を担当
+                </td>
+              </tr>
+              <tr>
+                <td class="history">
+                  <p class="history-left">2019/09</p>
+                  <p class="history-right">~2020/01</p>
+                </td>
+                <td class="history-section">
+                  📚 FijordBootCampに所属
+                  <br />
+                  <a href="https://bootcamp.fjord.jp/practices" target="_blank">フィヨルドブートキャンプのコース内容</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="history">
+                  <p class="history-left">2020/01</p>
+                  <p class="history-right">~2020/2</p>
+                </td>
+                <td class="history-section">
+                  🌱 スタートアップ企業にて販売管理システム開発に参画
+                  <br />メンバー2名にてローンチ前の開発に従事（Rails)
+                </td>
+              </tr>
+              <tr>
+                <td class="history">
+                  <p class="history-left">2020/03</p>
+                  <p class="history-right">~現在</p>
+                </td>
+                <td class="history-section">
+                  <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ruby/ruby.png" width="20px">
+                  Rubyコミッターの所属する受託開発会社に所属
+                  <br />日本最大級のECサイトの開発に従事（公用語英語）
+                </td>
+              </tr>
+              <tr>
+                <td class="history">
+                  <p class="history-left">2020/12</p>
+                  <p class="history-right">~現在</p>
+                </td>
+                <td class="history-section">
+                  <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png" width="20px">
+                  とある検索サイトシステムの開発
+                  <br />メンバー3名（Rails ✖ Vue）
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+      <youtube class="video" :video-id="videoId" />
+    </div>
   </div>
 </template>
 
@@ -109,13 +107,16 @@ export default {
   }
   article {
     padding: 40px 0;
+    margin: 0 auto;
     .history_h2 {
-      text-align: left;
       margin-bottom: 30px;
     }
 
     .history_box {
-      padding-left: 40px;
+      // padding-left: 40px;
+      max-width: 60%;
+      display: block;
+      margin: 0 auto;
       ul {
         list-style-type: none;
         padding: 0;
@@ -157,4 +158,17 @@ export default {
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .career_section {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 855px) {
+  .history_box {
+    max-width: 90% !important;
+  }
+}
+
 </style>

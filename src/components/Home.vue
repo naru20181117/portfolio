@@ -71,78 +71,78 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-hello {
+<style scoped lang="scss">
+#hello {
   margin: 50px 0;
-}
-.image {
-  vertical-align: middle;
-  margin: 0 auto;
-  padding-top: 80px;
-  width:75%;
-}
-.lp-img {
-  width: 100%;
-  max-width: 100vw;
-  height: auto;
-  align: center;
-}
-h3 {
-  margin: 60px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-.form{
-  margin: 0 auto;
-}
-.card-body{
-}
-a {
-  color: #42b983;
-}
-p {
-  margin: 6px;
-  text-align: middle;
-}
-.about_vue {
-  margin: 0 auto;
-  width: 300px;
-  height: 40px;
-  border: 1px solid #c8c8c8;
 
-  p {
-    vertical-align: middle;
-    margin-bottom: 0;
+  h3 {
+    margin: 60px 0 0;
   }
-}
-.vue_icon::before {
-  content: "";
-  background-image: url("../assets/img/vue-js.svg");
-  display: inline-block;
-  width: 0.9em;
-  height: 0.8em;
-  background-size: contain;
-  vertical-align: middle;
-}
-.situation {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px;
-}
-.situation-title {
-  margin: 30px;
-}
-.contact_form {
-  margin: 30px;
-}
-.collapse_bottom {
-  background-color: orange;
-  font-size: 1.5rem;
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  .form{
+    margin: 0 auto;
+  }
+  a {
+    color: #42b983;
+  }
+  p {
+    margin: 6px;
+    text-align: middle;
+  }
+  .image {
+    vertical-align: middle;
+    margin: 0 auto;
+    padding-top: 80px;
+    width:75%;
+    .lp-img {
+      width: 100%;
+      max-width: 100vw;
+      height: auto;
+      align: center;
+    }
+  }
+  .about_vue {
+    margin: 0 auto;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #c8c8c8;
+
+    p {
+      vertical-align: middle;
+      margin-bottom: 0;
+      .vue_icon::before {
+        content: "";
+        background-image: url("../assets/img/vue-js.svg");
+        display: inline-block;
+        width: 0.9em;
+        height: 0.8em;
+        background-size: contain;
+        vertical-align: middle;
+      }
+    }
+  }
+  .situation {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    .situation-title {
+      margin: 30px;
+    }
+  }
+
+  .contact_form {
+    margin: 30px;
+    .collapse_bottom {
+      background-color: orange;
+      font-size: 1.5rem;
+    }
+  }
 }
 </style>

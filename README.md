@@ -41,6 +41,11 @@ npm run build
 npm run lint
 ```
 
+### Deploy on Firebase
+```
+firebase deploy
+```
+
 ## Licence
 
 [MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)

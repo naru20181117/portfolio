@@ -117,4 +117,10 @@ export default {
     opacity: 0;
   }
 }
+
+@media only screen and (max-width: 402px) {
+  #app {
+    margin-top: 110px;
+  }
+}
 </style>
