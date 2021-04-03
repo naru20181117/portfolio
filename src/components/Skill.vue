@@ -114,6 +114,14 @@ export default {
         {
           name: "VS code",
           path: "visual-studio-code"
+        },
+        {
+          name: "Flutter",
+          path: "flutter"
+        },
+        {
+          name: "Golang",
+          path: "gopher"
         }
       ]
     };

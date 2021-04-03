@@ -66,12 +66,22 @@
               <tr>
                 <td class="history">
                   <p class="history-left">2020/12</p>
-                  <p class="history-right">~現在</p>
+                  <p class="history-right">~2021/3</p>
                 </td>
                 <td class="history-section">
                   <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png" width="20px">
                   とある検索サイトシステムの開発
                   <br />メンバー3名（Rails ✖ Vue）
+                </td>
+              </tr>
+              <tr>
+                <td class="history">
+                  <p class="history-left">2021/2</p>
+                  <p class="history-right">~現在</p>
+                </td>
+                <td class="history-section">
+                  🔨DXソリューション対応の企業にて新規開発を対応
+                  <br />メンバー2名（Ruby中心）
                 </td>
               </tr>
             </tbody>
