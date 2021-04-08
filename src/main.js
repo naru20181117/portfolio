@@ -5,7 +5,7 @@ import router from '@/router'
 import VueYoutube from 'vue-youtube'
 
 import firebase from "firebase/app";
-import { firebaseConfig } from '@/firebaseConfig.js'
+import { firebaseConfig } from '@/firebase/config.js'
 import "firebase/analytics";
 
 import 'bootstrap/dist/css/bootstrap.css'
