@@ -4,28 +4,25 @@ import App from './App.vue'
 import router from './router'
 import VueYoutube from 'vue-youtube'
 
+import firebase from "firebase/app";
+import { firebaseConfig } from '@/firebaseConfig.js'
+import "firebase/analytics";
+
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import './assets/scss/style.scss'
-// import {
-//   library
-// } from '@fortawesome/fontawesome-svg-core'
-// import {
-//   faUserSecret
-// } from '@fortawesome/free-solid-svg-icons'
-// import {
-//   FontAwesomeIcon
-// } from '@fortawesome/vue-fontawesome'
-
 
 // library.add(faUserSecret)
 
 // Vue.component('font-awesome-icon', FontAwesomeIcon)
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
 
 Vue.config.productionTip = false
 
 Vue.use(VueYoutube)
 Vue.use(BootstrapVue)
+Vue.prototype.$analytics = firebase.analytics();
 
 new Vue({
   router,
