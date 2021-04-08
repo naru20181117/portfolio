@@ -36,8 +36,7 @@
         <b-button v-b-toggle.collapse-1 variant="warning" class="collapse_bottom">Push HERE</b-button>
         <b-collapse id="collapse-1" class="mt-2">
           <b-card>
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSd2uRBj_IfOvWerXh5pMbzobOzEPYXezcXO7FfbYFeT40gKGA/viewform?embedded=true"
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSftrODVG9GkX2N7sDWtclL0kuH71xHVU7j0rrmdehS9R3_atA/viewform?embedded=true"
               width="640"
               height="705"
               frameborder="0"
