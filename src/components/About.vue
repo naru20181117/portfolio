@@ -27,7 +27,7 @@
       <div class="flexbox">
         <dl class="detail-profile-left">
           <dt>Name</dt>
-          <dd>🙋‍♂️塚崎 成寛</dd>
+          <dd>🙋‍♂️なる</dd>
           <dt>My home town</dt>
           <dd>🍜福岡県</dd>
           <dt>Overseas</dt>
@@ -35,7 +35,7 @@
           <dt>Ability</dt>
           <dd>英語 / バスケ / 車・バイクの運転 / 人見知りしない</dd>
           <dt>Recent Hobby</dt>
-          <dd>🕺ダンス / ボードゲーム / 👯‍♂️コミュニティ運営</dd>
+          <dd>🕺ダンス / 🎲ボードゲーム / 👯‍♂️コミュニティ運営 / 🤖IoT</dd>
         </dl>
       </div>
     </div>
