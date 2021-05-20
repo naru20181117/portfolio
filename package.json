@@ -6,7 +6,8 @@
     "start": "node server.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "firebase deploy"
   },
   "dependencies": {
     "bootstrap-vue": "^2.2.0",
@@ -27,6 +28,7 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "fibers": "^4.0.2",
+    "firebase-tools": "^9.11.0",
     "node-sass": "^4.13.1",
     "sass": "^1.24.4",
     "sass-loader": "^8.0.2",
