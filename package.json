@@ -7,7 +7,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "firebase deploy --only hosting"
+    "deploy": "firebase deploy --project naruhiro-portfolio --only hosting"
   },
   "dependencies": {
     "bootstrap-vue": "^2.2.0",
