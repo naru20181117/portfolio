@@ -1,5 +1,5 @@
-name: my portfolio workflow              # workflow 名
-on: push                             # event trigger on push
+name: my portfolio workflow
+on: push
 
 jobs:
   FrontDeploy:
@@ -14,10 +14,9 @@ jobs:
         node-version: 10.x
         registry-url: 'https://registry.npmjs.org'
     - name: Install Dependencies
-      run: npm install
+      run: npm install --save @/firebase/config.js
     - name: Build
       run: npm run build
-      # ↑ buildが違うコマンドなら、適宜変更して下さい
     - name: deploy to Firebase Hosting
       run: |
         yarn deploy --token=${{ secrets.FIREBASE_TOKEN }}
