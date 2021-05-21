@@ -76,6 +76,10 @@ export default {
         {
           name: "Sass",
           path: "sass"
+        },
+        {
+          name: "GAS",
+          path: "google-developers"
         }
       ],
       second_badges: [
@@ -100,10 +104,6 @@ export default {
           path: "capistrano"
         },
         {
-          name: "Rubocop",
-          path: "rubocop"
-        },
-        {
           name: "Docker",
           path: "docker-icon"
         },
@@ -114,6 +114,10 @@ export default {
         {
           name: "VS code",
           path: "visual-studio-code"
+        },
+        {
+          name: "Google Ads",
+          path: "google-ads"
         },
         {
           name: "Flutter",
