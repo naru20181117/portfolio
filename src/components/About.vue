@@ -17,12 +17,12 @@
         </dl>
       </div>
       <div class="profile_img flexbox">
-        <img src="../assets/img/my_pic.jpg" alt class="my_pic" />
+        <img src="../assets/img/current_icon.jpg" alt class="my_pic" />
       </div>
     </div>
     <div class="profile_box">
       <div class="about_img flexbox">
-        <img src="../assets/img/my_image.jpg" alt class="my_pic"/>
+        <img src="../assets/img/my_pic.jpg" alt class="my_pic"/>
       </div>
       <div class="flexbox">
         <dl class="detail-profile-left">
@@ -95,7 +95,7 @@ export default {
     max-width: 330px;
     width: 100%;
     height: auto;
-    border-radius: 50%;
+    border-radius: 40% 70% 70% 50% / 30% 50% 70% 70%;
   }
   .detail-profile {
     &-left {
