@@ -17,17 +17,17 @@
         </dl>
       </div>
       <div class="profile_img flexbox">
-        <img src="../assets/img/my_pic.jpg" alt class="my_pic" />
+        <img src="../assets/img/current_icon.jpg" alt class="my_pic" />
       </div>
     </div>
     <div class="profile_box">
       <div class="about_img flexbox">
-        <img src="../assets/img/my_image.jpg" alt class="my_pic"/>
+        <img src="../assets/img/my_pic.jpg" alt class="my_pic"/>
       </div>
       <div class="flexbox">
         <dl class="detail-profile-left">
           <dt>Name</dt>
-          <dd>🙋‍♂️塚崎 成寛</dd>
+          <dd>🙋‍♂️なる</dd>
           <dt>My home town</dt>
           <dd>🍜福岡県</dd>
           <dt>Overseas</dt>
@@ -35,7 +35,7 @@
           <dt>Ability</dt>
           <dd>英語 / バスケ / 車・バイクの運転 / 人見知りしない</dd>
           <dt>Recent Hobby</dt>
-          <dd>🕺ダンス / ボードゲーム / 👯‍♂️コミュニティ運営</dd>
+          <dd>🕺ダンス / 🎲ボードゲーム / 👯‍♂️コミュニティ運営 / 🤖IoT</dd>
         </dl>
       </div>
     </div>
@@ -95,7 +95,7 @@ export default {
     max-width: 330px;
     width: 100%;
     height: auto;
-    border-radius: 50%;
+    border-radius: 40% 70% 70% 50% / 30% 50% 70% 70%;
   }
   .detail-profile {
     &-left {

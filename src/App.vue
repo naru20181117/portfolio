@@ -24,6 +24,10 @@
         github
         <i class="fab github-icon"></i>
       </a>
+      <a href="https://qiita.com/naruqiita" target="_blank" class="sns-link">
+        Qiita
+        <img src="@/assets/img/qiita_favicon.png" alt class="qiita_pic" />
+      </a>
     </div>
     <footer>
       <div class="copyright-box">©️ 2020 naru All Rights Reserved.</div>
@@ -115,6 +119,10 @@ export default {
   .fade-enter,
   .fade-leave-to {
     opacity: 0;
+  }
+
+  .qiita_pic {
+    width: 2rem;
   }
 }
 

@@ -98,11 +98,11 @@ export default {
   .image {
     vertical-align: middle;
     margin: 0 auto;
-    padding-top: 80px;
+    padding-top: 60px;
     width:75%;
     .lp-img {
       width: 100%;
-      max-width: 100vw;
+      max-width: 60vw;
       height: auto;
       align: center;
     }
