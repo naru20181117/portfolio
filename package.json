@@ -30,7 +30,7 @@
     "eslint-plugin-vue": "^5.0.0",
     "fibers": "^4.0.2",
     "firebase-tools": "^9.11.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^6.0.0",
     "sass": "^1.24.4",
     "sass-loader": "^8.0.2",
     "vue-svg-loader": "^0.15.0",
