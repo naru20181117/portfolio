@@ -16,6 +16,9 @@
       <li>
         <router-link to="/porfolio">porfolio</router-link>
       </li>
+      <li>
+        <router-link to="/social">social</router-link>
+      </li>
     </ul>
   </nav>
 </template>

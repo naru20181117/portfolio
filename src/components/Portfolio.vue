@@ -87,7 +87,7 @@ export default {
           url: "docs.google.com/forms/d/e/1FAIpQLSdiMQs5493z7cEAIJysqDup4lXGbf-P4bfctavzoT1ECeraog/viewform",
           git_url: "gas_5love_language_app",
           image: "6fcd82f46598f0e55909217adeb2a143.gif",
-          detail1: "GAS",
+          detail1: "Google Apps Script",
           detail2: "5つの愛の言葉という本を参考に、その人の思考方法を図れるアプリ"
         },
         {
@@ -95,7 +95,7 @@ export default {
           url: "naruhiro-portfolio.firebaseapp.com",
           git_url: "portfolio",
           image: "da369ef9d418d939bcdab7a6cbd0fdae.png",
-          detail1: "Vue.js・Bootstrap",
+          detail1: "Vue.js・Firebase",
           detail2: "こちらのサイト・ポートフォリオ"
         },
         {
