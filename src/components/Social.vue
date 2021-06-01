@@ -2,7 +2,9 @@
   <div id="social">
     <v-card class="mx-auto twitter-box">
       <v-card-title>
-        <v-icon large top color="#26c6da">Twitter</v-icon>
+        <v-icon large top class="title-twitter">
+          <i class="fab fa-twitter-square"></i> Twitter
+        </v-icon>
       </v-card-title>
       <v-flex xs12>
         <Timeline :id="user_id" sourceType="profile" :options="{ tweetLimit: '5' }"/>
@@ -30,6 +32,10 @@ export default {
 #social {
   margin-top: 150px;
 
+  .title-twitter {
+    color: #5da8dc;
+    font-size: 2rem;
+  }
   .portfolio-right {
     display: inline-block;
     margin: 0 50px;
