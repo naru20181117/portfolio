@@ -10,6 +10,7 @@
     "deploy": "firebase deploy --project naruhiro-portfolio --only hosting"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "bootstrap-vue": "^2.2.0",
     "core-js": "^3.4.4",
     "firebase": "^8.3.2",

@@ -33,7 +33,6 @@
       </div>
     </div>
 
-
     <div class="portfolio-right">
       <div v-for="file in right_files" v-bind:key="file">
         <div class="card">
@@ -103,7 +102,7 @@ export default {
           url: "github.com/naru20181117/second.match",
           git_url: "second.match",
           image: "beec420168f4cc55e1707ad2b2925af8.gif",
-          detail1: "Rails/JS",
+          detail1: "Rails・Vue",
           detail2: "改修を楽しむ実験台アプリ"
         }
       ],
