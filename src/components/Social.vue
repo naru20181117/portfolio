@@ -1,6 +1,6 @@
 <template>
   <div id="social">
-    <div class="d-flex justify-space-around">
+    <div class="d-flex justify-content-center flex-wrap">
       <v-card class="mx-auto twitter-box">
         <v-card-title>
           <v-icon large top class="title-twitter">
@@ -11,30 +11,22 @@
           <Timeline :id="user_id" sourceType="profile" :options="{ tweetLimit: '5' }"/>
         </v-flex>
       </v-card>
-      <v-card class="portfolio-right ">
+      <v-card class="mx-auto portfolio-right">
         <v-card-title>
           <v-icon large top class="title-qiita">
             <img src="@/assets/img/qiita_favicon.png" alt class="qiita_pic" /> Qiita
           </v-icon>
         </v-card-title>
-        <v-card v-for="result in results" v-bind:key="result" class="mx-auto pa-2" outlined tile>
-          <v-card-title>
-            {{ result.title }}
-          </v-card-title>
-          <v-card-subtitle>
-            {{ result.created_at }}
-          </v-card-subtitle>
+        <b-card v-for="result in results" v-bind:key="result" class="mx-auto pa-2" style="max-width: 540px;" :title="result.title" :sub-title="'LGTM👍' + result.likes_count">
+          <b-badge variant="success" v-for="tag in result.tags" v-bind:key="tag">
+            {{tag.name}}
+          </b-badge>
+          <br>
           <v-spacer></v-spacer>
-          <v-btn
-            color="orange lighten-2"
-            text
-          >
-            {{ result.url }}
-          </v-btn>
-          {{ result.tags }}
-          {{ result.likes_count }}
-          <!-- <Timeline :id="user_id" sourceType="profile" :options="{ tweetLimit: '5' }"/> -->
-        </v-card>
+          <span>投稿日: {{result.created_at | moment }}</span>
+          <br>
+          <b-button variant="success" :href="result.url">Visit page</b-button>
+        </b-card>
       </v-card>
     </div>
   </div>
@@ -43,6 +35,7 @@
 <script>
 import { Timeline } from 'vue-tweet-embed'
 import axios from 'axios'
+import moment from "moment"
 
 export default {
   components: {
@@ -52,6 +45,15 @@ export default {
     return {
       user_id: "1026NT",
       results: null
+    }
+  },
+  filters: {
+    /**
+     * @param {Date} value    - Date オブジェクト
+     * @param {string} format - 変換したいフォーマット
+     */
+    moment(value) {
+      return moment(value).format('YYYY/MM/DD HH:mm');
     }
   },
   mounted() {
@@ -66,11 +68,7 @@ export default {
         }
         )
       .then(response => {
-        this.results = response,
-        this.results = response.data,
-        // this.data = response.data,
-        // eslint-disable-next-line no-console
-        console.log(this.results);
+        this.results = response.data
         }
     )
   }
