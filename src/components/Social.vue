@@ -11,25 +11,25 @@
           <Timeline :id="user_id" sourceType="profile" :options="{ tweetLimit: '5' }"/>
         </v-flex>
       </v-card>
-      <v-card class="mx-auto portfolio-right">
+      <v-card class="mx-auto ajax-box">
         <v-card-title>
           <v-icon large top class="title qiita">
             <img src="@/assets/img/qiita_favicon.png" alt class="qiita_pic" /> Qiita
           </v-icon>
         </v-card-title>
         <a v-for="(result, index) in qiitas" v-bind:key="index" :href="result.url">
-          <b-card class="mx-auto pa-2 mb-3" style="max-width: 540px;" :title="result.title" :sub-title="'LGTM👍' + result.likes_count">
-            <b-badge variant="success" v-for="(tag, index) in result.tags" v-bind:key="index">
+          <b-card class="mx-auto pa-2 mb-3" style="max-width: 300px;" :title="result.title">
+            <b-badge variant="success" v-for="(tag, index) in result.tags" v-bind:key="index" class="mr-1">
               {{tag.name}}
             </b-badge>
             <br>
             <v-spacer></v-spacer>
-            <span>投稿日: {{result.created_at | moment }}</span>
-            <br>
+            <span>LGTM <b>{{result.likes_count }}</b></span><br>
+            <span>{{result.created_at | moment }}</span>
           </b-card>
         </a>
       </v-card>
-      <v-card class="mx-auto portfolio-right">
+      <v-card class="mx-auto ajax-box">
         <v-card-title>
           <v-icon large top class="title note">
             <img src="@/assets/img/note_logo.png" alt class="qiita_pic" /> note
@@ -39,16 +39,17 @@
             v-bind:key="index" :href="note.noteUrl">
           <b-card
             class="mx-auto pa-2 mb-3"
-            style="max-width: 400px;"
+            style="max-width: 300px;"
             :title="note.name"
             :img-src="note.eyecatch"
             img-alt="Card image" img-bottom>
-            <b-badge variant="info" v-for="(tag, index) in note.hashtags" v-bind:key="index">
+            <b-badge variant="info" v-for="(tag, index) in note.hashtags" v-bind:key="index" class="mr-1">
               {{tag.hashtag.name}}
             </b-badge>
             <br>
             <v-spacer></v-spacer>
-            <span>投稿日: {{note.publishAt | moment }}</span>
+            <span>スキ <b>{{note.likeCount }}</b></span><br>
+            <span>{{note.publishAt | moment }}</span>
             <br>
           </b-card>
         </a>
@@ -79,7 +80,7 @@ export default {
      * @param {string} format - 変換したいフォーマット
      */
     moment(value) {
-      return moment(value).format('YYYY/MM/DD HH:mm');
+      return moment(value).format('YYYY / MM / DD');
     }
   },
   mounted() {
@@ -135,10 +136,13 @@ export default {
     }
   }
 
-  .portfolio-right {
+  .ajax-box {
     display: inline-block;
     margin: 0 30px;
     vertical-align: middle;
+    a {
+      color: black;
+    }
   }
 
   .twitter-box {
