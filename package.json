@@ -23,6 +23,7 @@
     "vue-youtube": "^1.4.0"
   },
   "devDependencies": {
+    "@babel/helper-compilation-targets": "^7.14.4",
     "@vue/cli-plugin-babel": "^4.1.0",
     "@vue/cli-plugin-eslint": "^4.1.0",
     "@vue/cli-plugin-router": "^4.1.2",
@@ -47,7 +48,9 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
+    "rules": {
+      "no-console": 0
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
