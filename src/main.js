@@ -11,6 +11,7 @@ import "firebase/analytics";
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import './assets/scss/style.scss'
+import vuetify from './plugins/vuetify'
 
 // library.add(faUserSecret)
 
@@ -26,5 +27,6 @@ Vue.prototype.$analytics = firebase.analytics();
 
 new Vue({
   router,
+  vuetify,
   render: h => h(App)
 }).$mount('#app')

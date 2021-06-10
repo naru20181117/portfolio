@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "node server.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "firebase deploy --project naruhiro-portfolio --only hosting"
+    "deploy": "firebase deploy --project naruhiro-portfolio --only hosting",
+    "start": "node server.js"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -20,7 +20,8 @@
     "vue-router": "^3.1.3",
     "vue-scrollto": "^2.17.1",
     "vue-tweet-embed": "^2.4.0",
-    "vue-youtube": "^1.4.0"
+    "vue-youtube": "^1.4.0",
+    "vuetify": "^2.4.0"
   },
   "devDependencies": {
     "@babel/helper-compilation-targets": "^7.14.4",
@@ -34,10 +35,12 @@
     "fibers": "^4.0.2",
     "firebase-tools": "^9.11.0",
     "node-sass": "^6.0.0",
-    "sass": "^1.24.4",
-    "sass-loader": "^8.0.2",
+    "sass": "~1.32.0",
+    "sass-loader": "^10.0.0",
+    "vue-cli-plugin-vuetify": "~2.4.1",
     "vue-svg-loader": "^0.15.0",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "vuetify-loader": "^1.7.0"
   },
   "eslintConfig": {
     "root": true,
