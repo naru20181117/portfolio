@@ -1,7 +1,7 @@
 <template>
   <div id="portfolio">
     <div class="portfolio-left">
-      <div v-for="file in left_files" v-bind:key="file">
+      <div v-for="(file, i) in left_files" v-bind:key="i">
         <div class="card">
           <b-card no-body class="overflow-hidden" style="max-width: 540px;">
             <b-row no-gutters>
@@ -34,7 +34,7 @@
     </div>
 
     <div class="portfolio-right">
-      <div v-for="file in right_files" v-bind:key="file">
+      <div v-for="(file, i) in right_files" v-bind:key="i">
         <div class="card">
           <b-card no-body class="overflow-hidden" style="max-width: 540px;">
             <b-row no-gutters>

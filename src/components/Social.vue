@@ -7,9 +7,11 @@
             <i class="fab fa-twitter-square"></i> Twitter
           </v-icon>
         </v-card-title>
-        <v-flex xs12>
-          <Timeline :id="user_id" sourceType="profile" :options="{ tweetLimit: '5' }"/>
-        </v-flex>
+        <div class='boad mt-4'>
+          <v-flex xs12>
+            <Timeline :id="user_id" sourceType="profile" :options="{ tweetLimit: '5' }"/>
+          </v-flex>
+        </div>
       </v-card>
       <v-card class="mx-auto ajax-box">
         <v-card-title>
@@ -17,17 +19,19 @@
             <img src="@/assets/img/qiita_favicon.png" alt class="qiita_pic" /> Qiita
           </v-icon>
         </v-card-title>
-        <a v-for="(result, index) in qiitas" v-bind:key="index" :href="result.url">
-          <b-card class="mx-auto pa-2 mb-3" style="max-width: 300px;" :title="result.title">
-            <b-badge variant="success" v-for="(tag, index) in result.tags" v-bind:key="index" class="mr-1">
-              {{tag.name}}
-            </b-badge>
-            <br>
-            <v-spacer></v-spacer>
-            <span>LGTM <b>{{result.likes_count }}</b></span><br>
-            <span>{{result.created_at | moment }}</span>
-          </b-card>
-        </a>
+        <div class='boad mt-4'>
+          <a v-for="(result, i) in qiitas" v-bind:key="i" :href="result.url">
+            <b-card class="mx-auto pa-2 mb-3" style="max-width: 300px;" :title="result.title">
+              <b-badge variant="success" v-for="(tag, i) in result.tags" v-bind:key="i" class="mr-1">
+                {{tag.name}}
+              </b-badge>
+              <br>
+              <v-spacer></v-spacer>
+              <span>LGTM <b>{{result.likes_count }}</b></span><br>
+              <span>{{result.created_at | moment }}</span>
+            </b-card>
+          </a>
+        </div>
       </v-card>
       <v-card class="mx-auto ajax-box">
         <v-card-title>
@@ -35,24 +39,26 @@
             <img src="@/assets/img/note_logo.png" alt class="qiita_pic" /> note
           </v-icon>
         </v-card-title>
-        <a v-for="(note, index) in notes"
-            v-bind:key="index" :href="note.noteUrl">
-          <b-card
-            class="mx-auto pa-2 mb-3"
-            style="max-width: 300px;"
-            :title="note.name"
-            :img-src="note.eyecatch"
-            img-alt="Card image" img-bottom>
-            <b-badge variant="info" v-for="(tag, index) in note.hashtags" v-bind:key="index" class="mr-1">
-              {{tag.hashtag.name}}
-            </b-badge>
-            <br>
-            <v-spacer></v-spacer>
-            <span>スキ <b>{{note.likeCount }}</b></span><br>
-            <span>{{note.publishAt | moment }}</span>
-            <br>
-          </b-card>
-        </a>
+        <div class='boad mt-4'>
+          <a v-for="(note, i) in notes"
+              v-bind:key="i" :href="note.noteUrl">
+            <b-card
+              class="mx-auto pa-2 mb-3"
+              style="max-width: 300px;"
+              :title="note.name"
+              :img-src="note.eyecatch"
+              img-alt="Card image" img-bottom>
+              <b-badge variant="info" v-for="(tag, i) in note.hashtags" v-bind:key="i" class="mr-1">
+                {{tag.hashtag.name}}
+              </b-badge>
+              <br>
+              <v-spacer></v-spacer>
+              <span>スキ <b>{{note.likeCount }}</b></span><br>
+              <span>{{note.publishAt | moment }}</span>
+              <br>
+            </b-card>
+          </a>
+        </div>
       </v-card>
     </div>
   </div>
@@ -134,6 +140,11 @@ export default {
     &.note {
       color: #41c9b4;
     }
+  }
+
+  .boad {
+    height: 800px;
+    overflow:auto;
   }
 
   .ajax-box {

@@ -1,7 +1,7 @@
 <template>
   <nav id="gnav" class="header-nav">
     <ul>
-      <li v-for="route in routes" v-bind:key="route">
+      <li v-for="(route, r) in routes" v-bind:key="r">
         <router-link :to="route.link">{{ route.name }}</router-link>
       </li>
     </ul>

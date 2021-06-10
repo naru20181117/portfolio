@@ -4,7 +4,7 @@
       <div class="container">
         <h2>Used Tech</h2>
         <ul class="tech-icons">
-          <li v-for="badge in first_badges" v-bind:key="badge">
+          <li v-for="(badge, i) in first_badges" v-bind:key="i">
             <b-badge pill variant="light" class="icon-badge">{{badge.name}}</b-badge>
             <br />
             <img
@@ -21,7 +21,7 @@
         </ul>
         <ul class="tech-icons">
           <h2>Touched Etc.</h2>
-          <li v-for="badge in second_badges" v-bind:key="badge">
+          <li v-for="(badge, i) in second_badges" v-bind:key="i">
             <b-badge pill variant="light" class="icon-badge">{{badge.name}}</b-badge>
             <br />
             <img
