@@ -99,7 +99,7 @@ export default {
   },
   mounted() {
     const qiita_url = "https://qiita.com/api/v2"
-    const note_url = "/note.com/api/v2"
+    const note_url = "https://note.com/api/v2"
     axios
       .get(
         qiita_url + "/users/naruqiita/items", {
