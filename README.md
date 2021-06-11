@@ -3,7 +3,7 @@ Naru_portfolio
 
 ### Deploy Status
 
-![](https://github.com/naru20181117/portfolio/workflows/FrontDeploy/badge.svg)
+![FrontDeploy](https://github.com/naru20181117/portfolio/actions/workflows/main.yml/badge.svg)
 
 #### Overview
 
