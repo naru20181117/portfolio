@@ -85,7 +85,11 @@ export default {
     return {
       user_id: "1026NT",
       qiitas: null,
-      notes: null
+      notes: null,
+      headers: {
+        'Content-Type': 'application/json;charset=UTF-8',
+        'Access-Control-Allow-Origin': '*',
+      },
     }
   },
   filters: {
@@ -115,7 +119,7 @@ export default {
     ),
     axios
       .get(
-        note_url + "/creators/naru_note/contents", {
+        note_url + "/creators/naru_note/contents", this.headers, {
           params: {
             kind: 'note',
             page: 1,
