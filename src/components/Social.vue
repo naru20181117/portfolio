@@ -110,6 +110,7 @@ import moment from "moment"
 import { CarouselCard, CarouselCardItem } from 'vue-carousel-card'
 import 'vue-carousel-card/styles/index.css'
 
+//TODO: ページ毎3つに分ける。DRY
 export default {
   components: {
     Timeline,
@@ -133,8 +134,8 @@ export default {
   },
   filters: {
     /**
-     * @param {Date} value    - Date オブジェクト
-     * @param {string} format - 変換したいフォーマット
+     * @param {Date} value
+     * @param {string} format
      */
     moment(value) {
       return moment(value).format('YYYY / MM / DD');
