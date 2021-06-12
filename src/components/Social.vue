@@ -86,10 +86,9 @@ export default {
       user_id: "1026NT",
       qiitas: null,
       notes: null,
-      headers: {
-        'Content-Type': 'application/json;charset=UTF-8',
-        'Access-Control-Allow-Origin': '*',
-      },
+      qiita_url: "https://qiita.com/api/v2",
+      note_url: "https://note.com/api/v2",
+      query_params: "?kind=note&page=1",
     }
   },
   filters: {
@@ -102,11 +101,13 @@ export default {
     }
   },
   mounted() {
-    const qiita_url = "https://qiita.com/api/v2"
-    const note_url = "https://note.com/api/v2"
     axios
       .get(
-        qiita_url + "/users/naruqiita/items", {
+        this.qiita_url + "/users/naruqiita/items", {
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': "Bearer 213628a4fe3742f74e1e0e91d97ace932458e364",
+          },
           params: {
             page: 1,
             per_page: 5
@@ -116,21 +117,17 @@ export default {
       .then(response => {
         this.qiitas = response.data
         }
-    ),
+      ).catch(error => {
+        console.log(error.response)
+      }),
     axios
-      .get(
-        note_url + "/creators/naru_note/contents", this.headers, {
-          params: {
-            kind: 'note',
-            page: 1,
-            per_page: 5
-          }
-        }
-      )
+      .get(this.note_url + "/creators/naru_note/contents" + this.query_params)
       .then(response => {
         this.notes = response.data.data.contents
-        }
-    )
+        })
+      .catch(error => {
+        console.log(error.response)
+      })
   }
 };
 </script>
@@ -157,6 +154,10 @@ export default {
   .boad {
     height: 800px;
     overflow:auto;
+
+    a {
+        pointer-events: none;
+    }
   }
 
   .ajax-box {
@@ -192,12 +193,15 @@ export default {
     &.carousel-card-container {
       max-width: 80%;
     }
+    .is-active {
+      a {
+        pointer-events: auto !important;
+      }
+    }
 
-    // &.carousel-card-indicator {
-    //   &.is-active {
-    //     height: 120%;
-    //   }
-    // }
+    .carousel-card-item {
+      background: rgba(250, 245, 225, 0.5);
+    }
   }
 }
 </style>
