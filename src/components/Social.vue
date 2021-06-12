@@ -21,17 +21,35 @@
             </div>
           </span>
           <div class='boad mt-4'>
-            <a v-for="(result, i) in qiitas" v-bind:key="i" :href="result.url">
-              <b-card class="mx-auto pa-2 mb-3" style="max-width: 450px;" :title="result.title">
-                <b-badge variant="success" v-for="(tag, i) in result.tags" v-bind:key="i" class="mr-1">
-                  {{tag.name}}
-                </b-badge>
-                <br>
+            <div v-if="qiita_acces">
+              <a v-for="(result, i) in qiitas" v-bind:key="i" :href="result.url">
+                <b-card class="mx-auto pa-2 mb-3" style="max-width: 450px;" :title="result.title">
+                  <b-badge variant="success" v-for="(tag, i) in result.tags" v-bind:key="i" class="mr-1">
+                    {{tag.name}}
+                  </b-badge>
+                  <br>
+                  <v-spacer></v-spacer>
+                  <span>LGTM <b>{{result.likes_count }}</b></span><br>
+                  <span>{{result.created_at | moment }}</span>
+                </b-card>
+              </a>
+            </div>
+            <div v-else>
+              <h2 class="mb-5">
+                APIのアクセスができてません<br>
+                まあどうせアクセスのしすぎで<br>
+                キャパオーバーしてます
                 <v-spacer></v-spacer>
-                <span>LGTM <b>{{result.likes_count }}</b></span><br>
-                <span>{{result.created_at | moment }}</span>
-              </b-card>
-            </a>
+              </h2>
+              <img src="@/assets/img/howl.jpg" alt class="error_pic" />
+              <v-spacer></v-spacer>
+              <p>ゼェ..ゼェ..もうアクセス無理〜〜〜</p>
+              <p>ページはこちら👇👇👇</p>
+              <v-spacer></v-spacer>
+              <h1>
+                <a :href="qiita_user_url">{{qiita_user_url}}</a>
+              </h1>
+            </div>
           </div>
         </div>
       </CarouselCardItem>
@@ -43,24 +61,41 @@
             </div>
           </span>
           <div class='boad mt-4'>
-            <a v-for="(note, i) in notes"
-                v-bind:key="i" :href="note.noteUrl">
-              <b-card
-                class="mx-auto pa-2 mb-3"
-                style="max-width: 450px;"
-                :title="note.name"
-                :img-src="note.eyecatch"
-                img-alt="Card image" img-bottom>
-                <b-badge variant="info" v-for="(tag, i) in note.hashtags" v-bind:key="i" class="mr-1">
-                  {{tag.hashtag.name}}
-                </b-badge>
-                <br>
-                <v-spacer></v-spacer>
-                <span>スキ <b>{{note.likeCount }}</b></span><br>
-                <span>{{note.publishAt | moment }}</span>
-                <br>
-              </b-card>
-            </a>
+            <div v-if="note_acces">
+              <a v-for="(note, i) in notes"
+                  v-bind:key="i" :href="note.noteUrl">
+                <b-card
+                  class="mx-auto pa-2 mb-3"
+                  style="max-width: 450px;"
+                  :title="note.name"
+                  :img-src="note.eyecatch"
+                  img-alt="Card image" img-bottom>
+                  <b-badge variant="info" v-for="(tag, i) in note.hashtags" v-bind:key="i" class="mr-1">
+                    {{tag.hashtag.name}}
+                  </b-badge>
+                  <br>
+                  <v-spacer></v-spacer>
+                  <span>スキ <b>{{note.likeCount }}</b></span><br>
+                  <span>{{note.publishAt | moment }}</span>
+                  <br>
+                </b-card>
+              </a>
+            </div>
+            <div v-else>
+              <h2 class="mb-5">
+                APIのアクセスができないようです<br>
+                お使いのブラウザがSafariだと<br>
+                エラーが発生します
+              </h2>
+              <img src="@/assets/img/mononoke.jpg" alt class="error_pic" />
+              <v-spacer></v-spacer>
+              <p>そなたは美しい。Chromeを使え</p>
+              <p>ページはこちら👇👇👇</p>
+              <v-spacer></v-spacer>
+              <h1>
+                <a :href="note_user_url">{{note_user_url}}</a>
+              </h1>
+            </div>
           </div>
         </div>
       </CarouselCardItem>
@@ -84,6 +119,11 @@ export default {
   data: function() {
     return {
       user_id: "1026NT",
+      qiita_acces: true,
+      note_acces: true,
+      qiita_user_url: "https://qiita.com/naruqiita",
+      note_user_url: "https://note.com/naru_note",
+      qiita_error_url: "@/assets/img/howl.jpg",
       qiitas: null,
       notes: null,
       qiita_url: "https://qiita.com/api/v2",
@@ -104,10 +144,6 @@ export default {
     axios
       .get(
         this.qiita_url + "/users/naruqiita/items", {
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': "Bearer 213628a4fe3742f74e1e0e91d97ace932458e364",
-          },
           params: {
             page: 1,
             per_page: 5
@@ -119,6 +155,7 @@ export default {
         }
       ).catch(error => {
         console.log(error.response)
+        this.qiita_acces = false
       }),
     axios
       .get(this.note_url + "/creators/naru_note/contents" + this.query_params)
@@ -127,6 +164,7 @@ export default {
         })
       .catch(error => {
         console.log(error.response)
+        this.note_acces = false
       })
   }
 };
@@ -175,17 +213,6 @@ export default {
     vertical-align: middle;
   }
 
-  h1 {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FFF;
-    background: linear-gradient(90deg, rgba(156,247,121,1), rgba(59,183,12,1))
-  }
-
   .carousel-card {
     max-width: 80%;
     margin: 0 auto;
@@ -202,6 +229,10 @@ export default {
     .carousel-card-item {
       background: rgba(250, 245, 225, 0.5);
     }
+  }
+
+  .error_pic {
+    width: 70%;
   }
 }
 </style>
