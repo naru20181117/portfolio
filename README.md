@@ -1,7 +1,11 @@
 Naru_portfolio
 ====
 
-Overview
+### Deploy Status
+
+![FrontDeploy](https://github.com/naru20181117/portfolio/actions/workflows/main.yml/badge.svg)
+
+#### Overview
 
 ## Description
 

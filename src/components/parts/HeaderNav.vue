@@ -1,21 +1,43 @@
 <template>
   <nav id="gnav" class="header-nav">
     <ul>
-      <li>
-        <router-link to="/">Home</router-link>
-      </li>
-      <li>
-        <router-link to="/about">about</router-link>
-      </li>
-      <li>
-        <router-link to="/skill">skill</router-link>
-      </li>
-      <li>
-        <router-link to="/career">career</router-link>
-      </li>
-      <li>
-        <router-link to="/porfolio">porfolio</router-link>
+      <li v-for="(route, r) in routes" v-bind:key="r">
+        <router-link :to="route.link">{{ route.name }}</router-link>
       </li>
     </ul>
   </nav>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      routes: [
+        {
+          link: "/",
+          name: 'Home'
+        },
+        {
+          link: "/about",
+          name: 'about'
+        },
+        {
+          link: "/skill",
+          name: 'skill'
+        },
+        {
+          link: "/career",
+          name: 'career'
+        },{
+          link: "/porfolio",
+          name: 'porfolio'
+        },
+        {
+          link: "/social",
+          name: 'social'
+        }
+      ]
+    }
+  },
+}
+</script>
