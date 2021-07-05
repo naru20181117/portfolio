@@ -6,7 +6,7 @@
           <b-card no-body class="overflow-hidden" style="max-width: 540px;">
             <b-row no-gutters>
               <b-col md="6">
-                <a :href="'https://' + file.url" target="_blank">
+                <a :href="checked_url(file)" target="_blank">
                   <b-card-img
                     :src="'https://i.gyazo.com/' + file.image"
                     alt="Image from Gyazo"
@@ -21,10 +21,10 @@
                     {{ file.detail1 }}<br>{{ file.detail2 }}
                   </b-card-text>
                   <b-button
-                  :href="'https://github.com/naru20181117/' + file.git_url"
+                  :href="checked_url(file)"
                   target="_blank"
                   variant="warning"
-                >Go Github</b-button>
+                >{{file.git_set ? 'Go Github' : 'Go Site'}}</b-button>
                 </b-card-body>
               </b-col>
             </b-row>
@@ -44,7 +44,7 @@
                     {{ file.detail1 }}<br>{{ file.detail2 }}
                   </b-card-text>
                   <b-button
-                  :href="'https://github.com/naru20181117/' + file.git_url"
+                  :href="file.git_url == 'undefined' ? file.url : 'https://github.com/naru20181117/' + file.git_url"
                   target="_blank"
                   variant="warning"
                 >Go Github</b-button>
@@ -74,12 +74,11 @@ export default {
     return {
       left_files: [
         {
-          title: "軌跡を残すコミュニティ用アプリ",
-          url: "github.com/naru20181117/kiseki-app",
-          git_url: "kiseki-app",
-          image: "c7d9e17b84e14d244cd9d2f82727d140.gif",
-          detail1: "Rails/kanban・JS",
-          detail2: "運営しているコミュニティ用アプリ"
+          title: "技術系ブログ",
+          url: "naruhero.netlify.app",
+          image: "f39ecfdbe36df1f9b0df6bed1c22104d.gif",
+          detail1: "Nuxt・Contentful",
+          detail2: "情報発信用ブログ",
         },
         {
           title: "診断アプリ",
@@ -87,7 +86,8 @@ export default {
           git_url: "gas_5love_language_app",
           image: "6fcd82f46598f0e55909217adeb2a143.gif",
           detail1: "Google Apps Script",
-          detail2: "5つの愛の言葉という本を参考に、その人の思考方法を図れるアプリ"
+          detail2: "5つの愛の言葉という本を参考に、その人の思考方法を図れるアプリ",
+          git_set: true
         },
         {
           title: "ポートフォリオサイト",
@@ -95,16 +95,9 @@ export default {
           git_url: "portfolio",
           image: "da369ef9d418d939bcdab7a6cbd0fdae.png",
           detail1: "Vue.js・Firebase",
-          detail2: "こちらのサイト・ポートフォリオ"
+          detail2: "こちらのサイト・ポートフォリオ",
+          git_set: true
         },
-        {
-          title: "Tinder風マッチングサイト",
-          url: "github.com/naru20181117/second.match",
-          git_url: "second.match",
-          image: "beec420168f4cc55e1707ad2b2925af8.gif",
-          detail1: "Rails・Vue",
-          detail2: "改修を楽しむ実験台アプリ"
-        }
       ],
       right_files: [
         {
@@ -133,6 +126,15 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    checked_url(file) {
+      if (file.git_set) {
+        return 'https://github.com/naru20181117/' + file.git_url
+      } else {
+        return 'https://' + file.url
+      }
+    }
   }
 };
 </script>

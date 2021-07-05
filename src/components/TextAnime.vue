@@ -18,23 +18,12 @@ export default {
       index: 0,
       original: [
         "IT業界4年目 \n元ネットワークエンジニア",
-        "Rubyを中心サーバサイドエンジニア。\nエンジニアのコミュニティも運営",
+        "Rubyメインサーバサイドエンジニア。\nエンジニアのコミュニティも運営",
         "販売管理システム、ECサイト、検索サイトの開発を経験。\n業務委託を中心に活躍中"
       ],
-      // 分解したメッセージ
       messages: [],
       text: ""
     };
-  },
-  computed: {
-    // editor: {
-    //   get() {
-    //     return this.text.map(e => e.text).join("");
-    //   },
-    //   set(text) {
-    //     this.text = this.convText(text);
-    //   }
-    // }
   },
   watch: {
     autoplay(val) {
