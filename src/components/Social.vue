@@ -128,8 +128,9 @@ export default {
       qiitas: null,
       notes: null,
       qiita_url: "https://qiita.com/api/v2",
-      note_url: "https://note.com/api/v2",
-      query_params: "?kind=note&page=1",
+      // note_url: "https://note.com/api/v2",
+      // query_params: "?kind=note&page=1",
+      cors_batch_url: "https://cloudflare-app.naru-cloundflare.workers.dev/"
     }
   },
   filters: {
@@ -159,7 +160,8 @@ export default {
         this.qiita_acces = false
       }),
     axios
-      .get(this.note_url + "/creators/naru_note/contents" + this.query_params)
+      // .get(this.note_url + "/creators/naru_note/contents" + this.query_params)
+      .get(this.cors_batch_url)
       .then(response => {
         this.notes = response.data.data.contents
         })
