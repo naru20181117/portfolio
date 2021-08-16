@@ -98,6 +98,15 @@ export default {
           detail2: "こちらのサイト・ポートフォリオ",
           git_set: true
         },
+        {
+          title: "小学生漢字テストpdf生成アプリ",
+          url: "https://kanjitest.herokuapp.com/",
+          git_url: "kanji_test",
+          image: "bf5cd792c2b2a978a1768b610fab17fc.gif",
+          detail1: "Rails(Prawn)",
+          detail2: "ネットで良い感じのテストが見つからなかったので作った",
+          git_set: true
+        },
       ],
       right_files: [
         {
@@ -115,6 +124,14 @@ export default {
           image: "574a5037b377e3f29ddef91166a52842",
           detail1: "Rails/JS",
           detail2: "Twitterの＃を保存するアプリ"
+        },
+        {
+          title: "食べたい物で身体が何を欲しているかわかるアプリ",
+          url: "https://tabetai.herokuapp.com/",
+          git_url: "snippet",
+          image: "8f46baefbf93eba7f386ef091e7d64b4",
+          detail1: "Rails/Vue",
+          detail2: "ふと食べたい物があったときに浮かんで作ったアプリ"
         },
         {
           title: "メモ管理アプリ",
