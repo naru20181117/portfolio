@@ -8,7 +8,7 @@
           <dd>⛰田舎で育った雑草力を武器に行動力で邁進する若者</dd>
           <dt>趣味：</dt>
           <dd>コミュニティ運営</dd>
-          <dd>（エンジニア他、複数のコミュニティ運営中）</dd>
+          <dd><a href="https://tonihome.connpass.com/" target="_blank">とにかくほめるLT会を主催</a></dd>
           <dt>現在：</dt>
           <dd>👨🏻‍💻バックエンドエンジニアとして活動中</dd>
           <dd>世の中の「もったいない」をITの力で無くしたいとサービスづくりを夢見る</dd>
@@ -103,6 +103,10 @@ export default {
     }
     &-right {
       text-align: right;
+
+      a {
+        color: #42b983;
+      }
     }
   }
   dd {

@@ -84,12 +84,12 @@
             <div v-else>
               <h2 class="mb-5">
                 APIのアクセスができないようです<br>
-                お使いのブラウザがSafariだと<br>
-                エラーが発生します
+                ブラウザにて<br>
+                CORSエラーが発生しています
               </h2>
               <img src="@/assets/img/mononoke.jpg" alt class="error_pic" />
               <v-spacer></v-spacer>
-              <p>そなたは美しい。Chromeを使え</p>
+              <p>そなたは美しい。CORS用拡張機能を使え</p>
               <p>ページはこちら👇👇👇</p>
               <v-spacer></v-spacer>
               <h1>

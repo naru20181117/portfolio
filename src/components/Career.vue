@@ -14,6 +14,7 @@
                 <td class="history">2015/8</td>
                 <td class="history-section">🚘 現地旅行代理店でのインターンシップ経験</td>
               </tr>
+              <hr>
               <tr>
                 <td class="history">2018/4</td>
                 <td class="history-section">
@@ -77,11 +78,21 @@
               <tr>
                 <td class="history">
                   <p class="history-left">2021/2</p>
-                  <p class="history-right">~現在</p>
+                  <p class="history-right">~2021/3</p>
                 </td>
                 <td class="history-section">
                   🔨DXソリューション対応の企業にて新規開発を対応
                   <br />メンバー2名（Ruby中心）
+                </td>
+              </tr>
+              <tr>
+                <td class="history">
+                  <p class="history-left">2021/9</p>
+                  <p class="history-right">~現在</p>
+                </td>
+                <td class="history-section">
+                  👨‍💼BtoBマッチングプラットフォーム事業にてバッグエンドを担当
+                  <br />メンバー7名（Rails）
                 </td>
               </tr>
             </tbody>

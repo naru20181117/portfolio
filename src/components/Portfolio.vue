@@ -74,11 +74,11 @@ export default {
     return {
       left_files: [
         {
-          title: "技術系ブログ",
-          url: "naruhero.netlify.app",
+          title: "情報発信用ブログ",
+          url: "naruhero.site",
           image: "f39ecfdbe36df1f9b0df6bed1c22104d.gif",
           detail1: "Nuxt・Contentful",
-          detail2: "情報発信用ブログ",
+          detail2: "プレゼン機能も搭載",
         },
         {
           title: "診断アプリ",
@@ -90,12 +90,12 @@ export default {
           git_set: true
         },
         {
-          title: "ポートフォリオサイト",
+          title: "Portfolio Site",
           url: "naruhiro-portfolio.firebaseapp.com",
           git_url: "portfolio",
           image: "da369ef9d418d939bcdab7a6cbd0fdae.png",
           detail1: "Vue.js・Firebase",
-          detail2: "こちらのサイト・ポートフォリオ",
+          detail2: "このポートフォリオサイト",
           git_set: true
         },
         {
@@ -115,7 +115,7 @@ export default {
           git_url: "hashtags_keeper",
           image: "df83935aec8bd50378ed9b03ed3c8015",
           detail1: "Vue・Firebase",
-          detail2: "Instaでのハッシュタグなどを残しておくためのアプリ(開発中)"
+          detail2: "Instaでの＃などを保存するアプリ(開発途中)"
         },
         {
           title: "Hashtag Keeper(Twitter)",
