@@ -42,7 +42,7 @@ export default {
     return {
       first_badges: [
         {
-          name: "HTML",
+          name: "HTML5",
           path: "html-5"
         },
         {

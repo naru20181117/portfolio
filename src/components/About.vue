@@ -4,16 +4,18 @@
       <div class="flexbox">
         <h2 class="profile_title">Who am I</h2>
         <dl class="detail-profile-right">
-          <dd>九州から上京を果たし</dd>
-          <dd>⛰田舎で育った雑草力を武器に行動力で邁進する若者</dd>
+          <dd>九州から上京</dd>
+          <dd>⛰田舎の雑草力を武器に行動力で邁進する若者</dd>
           <dt>趣味：</dt>
-          <dd>コミュニティ運営</dd>
+          <dd>エンジニアコミュニティ運営</dd>
           <dd><a href="https://tonihome.connpass.com/" target="_blank">とにかくほめるLT会を主催</a></dd>
           <dt>現在：</dt>
-          <dd>👨🏻‍💻バックエンドエンジニアとして活動中</dd>
-          <dd>世の中の「もったいない」をITの力で無くしたいとサービスづくりを夢見る</dd>
+          <dd>👨🏻‍💻バックエンドエンジニア</dd>
+          <dd>世の中の「もったいない」を</dd>
+          <dd>ITの力で無くすためサービスづくり中</dd>
           <dt>余談：</dt>
-          <dd>🏠シェアハウスに住む🇯🇵🇺🇸🇪🇸日米西のトリリンガル</dd>
+          <dd>🏠シェアハウスに住む</dd>
+          <dd>🇯🇵🇺🇸🇪🇸日米西のトリリンガル</dd>
         </dl>
       </div>
       <div class="profile_img flexbox">
@@ -35,7 +37,7 @@
           <dt>Ability</dt>
           <dd>英語 / バスケ / 車・バイクの運転 / 人見知りしない</dd>
           <dt>Recent Hobby</dt>
-          <dd>🕺ダンス / 🎲ボードゲーム / 👯‍♂️コミュニティ運営 / 🤖IoT</dd>
+          <dd>👨🏻‍💻競プロ / 🎲ボードゲーム / 🎁プレゼン / 🤖IoT</dd>
         </dl>
       </div>
     </div>
