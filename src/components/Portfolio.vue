@@ -134,7 +134,7 @@ export default {
         },
         {
           title: "食べたい物で身体が何を欲しているかわかるアプリ",
-          url: "https://tabetai.herokuapp.com/",
+          url: "http://tabetai.herokuapp.com/",
           git_url: "snippet",
           image: "8f46baefbf93eba7f386ef091e7d64b4",
           detail1: "Rails/Vue",
