@@ -29,8 +29,8 @@ export default {
           link: "/career",
           name: 'career'
         },{
-          link: "/porfolio",
-          name: 'porfolio'
+          link: "/portfolio",
+          name: 'portfolio'
         },
         {
           link: "/social",

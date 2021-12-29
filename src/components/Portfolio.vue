@@ -75,10 +75,10 @@ export default {
       left_files: [
         {
           title: "ideee（アイディー）",
-          url: "ideee.tech",
+          url: "ideee.tech/about?utm_source=portfolio&utm_medium=page&utm_id=portfolio",
           image: "37acc2382c17c7930b21afb97fd91be3.gif",
           detail1: "Rails",
-          detail2: "β版公開中！アイデアとエンジニアのマッチング",
+          detail2: "アイデアとエンジニアのマッチング💡本腰アプリ",
         },
         {
           title: "情報発信用ブログ",

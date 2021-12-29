@@ -116,8 +116,8 @@ export default {
           path: "visual-studio-code"
         },
         {
-          name: "Google Ads",
-          path: "google-ads"
+          name: "React",
+          path: "react"
         },
         {
           name: "Flutter",

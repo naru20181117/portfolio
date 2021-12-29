@@ -14,7 +14,7 @@
         <router-link to="/career">career</router-link>
       </li>|
       <li>
-        <router-link to="/porfolio">porfolio</router-link>
+        <router-link to="/portfolio">portfolio</router-link>
       </li>|
       <li>
         <router-link to="/social">social</router-link>
