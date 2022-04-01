@@ -50,7 +50,7 @@
                 </td>
                 <td class="history-section">
                   🌱 スタートアップ企業にて販売管理システム開発に参画
-                  <br />メンバー2名にてローンチ前の開発に従事（Rails)
+                  <br />👫：2名 🛠：Rails ローンチ前の開発に従事
                 </td>
               </tr>
               <tr>
@@ -61,7 +61,7 @@
                 <td class="history-section">
                   <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ruby/ruby.png" width="20px">
                   Rubyコミッターの所属する受託開発会社に所属
-                  <br />日本最大級のECサイトの開発に従事（公用語英語）
+                  <br />👫：15名 🛠：Rails 日本最大級のECサイトの開発に従事（公用語英語）
                 </td>
               </tr>
               <tr>
@@ -72,7 +72,7 @@
                 <td class="history-section">
                   <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png" width="20px">
                   とある検索サイトシステムの開発
-                  <br />メンバー3名（Rails ✖ Vue）
+                  <br />👫：3名 🛠：Rails ✖ Vue
                 </td>
               </tr>
               <tr>
@@ -82,7 +82,7 @@
                 </td>
                 <td class="history-section">
                   🔨DXソリューション対応の企業にて新規開発を対応
-                  <br />メンバー2名（Ruby中心）
+                  <br />👫：2名 🛠：Ruby
                 </td>
               </tr>
               <tr>
@@ -92,7 +92,27 @@
                 </td>
                 <td class="history-section">
                   👨‍💼BtoBマッチングプラットフォーム事業にてバッグエンドを担当
-                  <br />メンバー7名（Rails）
+                  <br />👫：7名 🛠：Rails
+                </td>
+              </tr>
+              <tr>
+                <td class="history">
+                  <p class="history-left">2022/1</p>
+                  <p class="history-right">~現在</p>
+                </td>
+                <td class="history-section">
+                  📞BtoCラインビジネス事業にてバッグエンドを担当
+                  <br />👫：1名 🛠：Rails(APIモード) ✖ Vue
+                </td>
+              </tr>
+              <tr>
+                <td class="history">
+                  <p class="history-left">2022/2</p>
+                  <p class="history-right">~現在</p>
+                </td>
+                <td class="history-section">
+                  🚀HR領域Sass新規事業の立ち上げや採用活動のサポート
+                  <br />👫：3名 🛠：PHP
                 </td>
               </tr>
             </tbody>

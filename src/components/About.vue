@@ -4,8 +4,6 @@
       <div class="flexbox">
         <h2 class="profile_title">Who am I</h2>
         <dl class="detail-profile-right">
-          <dd>九州から上京</dd>
-          <dd>⛰田舎の雑草力を武器に行動力で邁進する若者</dd>
           <dt>趣味：</dt>
           <dd>エンジニアコミュニティ運営</dd>
           <dd><a href="https://tonihome.connpass.com/" target="_blank">とにかくほめるLT会を主催</a></dd>

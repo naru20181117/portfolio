@@ -120,6 +120,10 @@ export default {
           path: "react"
         },
         {
+          name: "Next.js",
+          path: "nextjs"
+        },
+        {
           name: "Flutter",
           path: "flutter"
         },
