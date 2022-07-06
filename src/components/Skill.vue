@@ -13,11 +13,6 @@
               class="icon-image"
             />
           </li>
-          <li>
-            <b-badge pill variant="light" class="icon-badge">VBA</b-badge>
-            <br />
-            <img src="@/assets/img/skill_icon/VBA.svg" alt class="icon-image" />
-          </li>
         </ul>
         <ul class="tech-icons">
           <h2>Touched Etc.</h2>
@@ -29,6 +24,11 @@
               alt
               class="icon-image"
             />
+          </li>
+          <li>
+            <b-badge pill variant="light" class="icon-badge">VBA</b-badge>
+            <br />
+            <img src="@/assets/img/skill_icon/VBA.svg" alt class="icon-image" />
           </li>
         </ul>
       </div>
@@ -70,17 +70,29 @@ export default {
           path: "nuxt-icon"
         },
         {
-          name: "Firebase",
-          path: "firebase"
-        },
-        {
           name: "Sass",
           path: "sass"
         },
         {
-          name: "GAS",
-          path: "google-developers"
-        }
+          name: "CoffeeScript",
+          path: "coffeescript"
+        },
+        {
+          name: "Docker",
+          path: "docker-icon"
+        },
+        {
+          name: "React",
+          path: "react"
+        },
+        {
+          name: "Next.js",
+          path: "nextjs"
+        },
+        {
+          name: "GraphQL",
+          path: "graphql"
+        },
       ],
       second_badges: [
         {
@@ -104,8 +116,8 @@ export default {
           path: "capistrano"
         },
         {
-          name: "Docker",
-          path: "docker-icon"
+          name: "GAS",
+          path: "google-developers"
         },
         {
           name: "Vim",
@@ -116,12 +128,12 @@ export default {
           path: "visual-studio-code"
         },
         {
-          name: "React",
-          path: "react"
+          name: "Firebase",
+          path: "firebase"
         },
         {
-          name: "Next.js",
-          path: "nextjs"
+          name: "PHP",
+          path: "php"
         },
         {
           name: "Flutter",

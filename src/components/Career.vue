@@ -88,7 +88,7 @@
               <tr>
                 <td class="history">
                   <p class="history-left">2021/9</p>
-                  <p class="history-right">~現在</p>
+                  <p class="history-right">~2021/6</p>
                 </td>
                 <td class="history-section">
                   👨‍💼BtoBマッチングプラットフォーム事業にてバッグエンドを担当
@@ -113,6 +113,16 @@
                 <td class="history-section">
                   🚀HR領域Sass新規事業の立ち上げや採用活動のサポート
                   <br />👫：3名 🛠：PHP
+                </td>
+              </tr>
+              <tr>
+                <td class="history">
+                  <p class="history-left">2022/7</p>
+                  <p class="history-right">~現在</p>
+                </td>
+                <td class="history-section">
+                  📣マーケティング領域サービスのリプレイス案件
+                  <br />👫：4名 🛠：TS+next.js × Rails+GraphQL
                 </td>
               </tr>
             </tbody>

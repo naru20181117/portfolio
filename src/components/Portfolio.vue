@@ -117,6 +117,14 @@ export default {
       ],
       right_files: [
         {
+          title: "Play with your Buddy",
+          url: "playwithyourbuddy.com",
+          git_url: "play_with_your_buddy",
+          image: "ca7b67bed097cfacbf245faed09b5ecb",
+          detail1: "React",
+          detail2: "ペットとあと何回遊べるか確認するアプリ"
+        },
+        {
           title: "Hashtag Keeper（Instagram用）",
           url: "hashtags-keeper.web.app",
           git_url: "hashtags_keeper",
