@@ -22,7 +22,7 @@
     "vue-scrollto": "^2.17.1",
     "vue-tweet-embed": "^2.4.0",
     "vue-youtube": "^1.4.0",
-    "vuetify": "^2.4.0"
+    "vuetify": "^2.6.10"
   },
   "devDependencies": {
     "@babel/helper-compilation-targets": "^7.14.4",
