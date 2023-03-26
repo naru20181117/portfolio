@@ -17,7 +17,7 @@ export default {
       timer: null,
       index: 0,
       original: [
-        "エンジニア4年目 / 元ネットワークエンジニア / 業務委託を中心に活動中",
+        "エンジニア5年目 / フリーランスエンジニア",
         "Rubyメインサーバサイドエンジニア / ideee代表",
         "新規サービス立ち上げなどのゼロイチを好んで活動中"
       ],
@@ -43,7 +43,7 @@ export default {
           this.text = this.messages[this.index];
           this.ticker();
         }
-      }, 5000);
+      }, 6000);
     },
     // テキストを分解してオブジェクトに
     convText(text) {

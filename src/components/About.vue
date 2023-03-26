@@ -39,6 +39,19 @@
         </dl>
       </div>
     </div>
+
+    <div class="article">
+      <h2 class="article-title">記事紹介</h2>
+      <table>
+        <tbody>
+          <tr>
+            <a href="https://iwahen.com/article/3723/" target="_blank" class="icon-link">
+              エンジニアってどうやったらなれるんですか？を現役エンジニアにインタビューしてみた
+            </a>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </template>
 
@@ -113,4 +126,24 @@ export default {
     margin: 10px 0 10px 0;
   }
 }
+
+.article {
+  margin: 5em auto 0;
+
+  &-title {
+    max-width: 200px;
+    height: 40px;
+    border: 1px solid #c8c8c8;
+    margin: 0 auto;
+  }
+
+  table {
+    margin: 2rem auto 0;
+
+    tr {
+      margin: 2rem 0;
+    }
+  }
+}
+
 </style>

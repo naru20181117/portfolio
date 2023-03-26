@@ -4,16 +4,6 @@
       <img src="../assets/logo.png" alt class="lp-img"/>
     </div>
 
-    <div class="about_vue">
-      <p>
-        These pages are written in
-        <a href="https://vuejs.org/" target="_blank" class="icon-link">
-          <i class="vue_icon"></i>
-          vue.js
-        </a>
-      </p>
-    </div>
-
     <!-- message -->
     <ul class="situation">
       <li>
@@ -22,7 +12,7 @@
       <li>
         <TextAnime :autoplay="autoplay" />
         <label>
-          <input type="checkbox" v-model="autoplay" /> 5秒ごとに自動更新
+          <input type="checkbox" v-model="autoplay" /> 6秒ごとに自動更新
         </label>
       </li>
     </ul>
@@ -101,26 +91,6 @@ export default {
       max-width: 60vw;
       height: auto;
       align: center;
-    }
-  }
-  .about_vue {
-    margin: 0 auto;
-    width: 300px;
-    height: 40px;
-    border: 1px solid #c8c8c8;
-
-    p {
-      vertical-align: middle;
-      margin-bottom: 0;
-      .vue_icon::before {
-        content: "";
-        background-image: url("../assets/img/vue-js.svg");
-        display: inline-block;
-        width: 0.9em;
-        height: 0.8em;
-        background-size: contain;
-        vertical-align: middle;
-      }
     }
   }
   .situation {
