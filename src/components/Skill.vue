@@ -42,12 +42,24 @@ export default {
     return {
       first_badges: [
         {
-          name: "HTML5",
-          path: "html-5"
+          name: "React",
+          path: "react"
         },
         {
-          name: "CSS3",
-          path: "css-3"
+          name: "Next.js",
+          path: "nextjs"
+        },
+        {
+          name: "GraphQL",
+          path: "graphql"
+        },
+        {
+          name: "Vue.js",
+          path: "vue"
+        },
+        {
+          name: "Nuxt.js",
+          path: "nuxt-icon"
         },
         {
           name: "Ruby",
@@ -58,16 +70,16 @@ export default {
           path: "rails"
         },
         {
+          name: "HTML5",
+          path: "html-5"
+        },
+        {
+          name: "CSS3",
+          path: "css-3"
+        },
+        {
           name: "Javascript",
           path: "javascript"
-        },
-        {
-          name: "Vue.js",
-          path: "vue"
-        },
-        {
-          name: "Nuxt.js",
-          path: "nuxt-icon"
         },
         {
           name: "Sass",
@@ -80,18 +92,6 @@ export default {
         {
           name: "Docker",
           path: "docker-icon"
-        },
-        {
-          name: "React",
-          path: "react"
-        },
-        {
-          name: "Next.js",
-          path: "nextjs"
-        },
-        {
-          name: "GraphQL",
-          path: "graphql"
         },
       ],
       second_badges: [
