@@ -2,11 +2,16 @@
   <div class="Contact">
     <section class="contact_setion">
       <div class="container">
-        <form name="contact_form" class="form-box">
-          <h2 class="contact_h2">Contact</h2>
+        <form
+          name="contact_form"
+          class="form-box"
+        >
+          <h2 class="contact_h2">
+            Contact
+          </h2>
           <p class="contact_description">
             ※ TwitterのDMも解放しており、そちらからのお問い合わせも受け付けております。
-            <br />フッターのTwitterアイコンから直接飛べるためそちらからご利用ください。
+            <br>フッターのTwitterアイコンから直接飛べるためそちらからご利用ください。
           </p>
           <div class="form-item-box">
             <label class="control-label">
@@ -15,14 +20,14 @@
             </label>
             <div class="contact_form_input">
               <input
+                id="name"
                 v-model="contactForm.name"
                 type="text"
                 class="form-control"
                 name="your-name"
                 placeholder="Name"
                 required
-                id="name"
-              />
+              >
             </div>
           </div>
           <div class="form-item-box">
@@ -32,14 +37,14 @@
             </label>
             <div class="contact_form_input">
               <input
+                id="email"
                 v-model="contactForm.email"
                 type="email"
                 class="form-control"
                 name="your-email"
                 placeholder="example@email.com"
                 required
-                id="email"
-              />
+              >
             </div>
           </div>
           <div class="form-item-box">
@@ -49,19 +54,24 @@
             </label>
             <div class="contact_from_input">
               <textarea
+                id="message"
                 v-model="contactForm.contents"
                 class="form-control"
                 name="your-message"
                 placeholder="Message"
                 rows="8"
                 required
-                id="message"
-              ></textarea>
+              />
             </div>
           </div>
           <div class="form-item-box">
             <div class="form-button-box">
-              <button class="form-button" v-on:click="sendMaiil()">Submit</button>
+              <button
+                class="form-button"
+                @click="sendMaiil()"
+              >
+                Submit
+              </button>
             </div>
           </div>
         </form>
@@ -76,25 +86,25 @@
 export default {
   data: () => ({
     contactForm: {
-      name: "",
-      contents: "",
-      email: "",
+      name: '',
+      contents: '',
+      email: '',
       loading: false
     }
   }),
   methods: {
-    sendMail: function() {
-      if (document.getElementById("name").value === "") {
-        alert("名前を入れてください");
-        return false;
+    sendMail: function () {
+      if (document.getElementById('name').value === '') {
+        alert('名前を入れてください')
+        return false
       }
-      if (document.getElementById("email").value === "") {
-        alert("メールアドレスを入力して下さい");
-        return false;
+      if (document.getElementById('email').value === '') {
+        alert('メールアドレスを入力して下さい')
+        return false
       }
-      if (document.getElementById("message").value === "") {
-        alert("メッセージを入力してください");
-        return false;
+      if (document.getElementById('message').value === '') {
+        alert('メッセージを入力してください')
+        return false
       }
       //     const sendMail = functions.httpsCallable("sendMail");
       //     sendMail(this.contactForm)
@@ -107,7 +117,7 @@ export default {
       //       });
     }
   }
-};
+}
 </script>
 
 <style lang="scss">

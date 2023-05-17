@@ -2,11 +2,18 @@
   <div id="about">
     <div class="profile_box">
       <div class="flexbox">
-        <h2 class="profile_title">Who am I</h2>
+        <h2 class="profile_title">
+          Who am I
+        </h2>
         <dl class="detail-profile-right">
           <dt>趣味：</dt>
           <dd>エンジニアコミュニティ運営</dd>
-          <dd><a href="https://tonihome.connpass.com/" target="_blank">とにかくほめるLT会を主催</a></dd>
+          <dd>
+            <a
+              href="https://tonihome.connpass.com/"
+              target="_blank"
+            >とにかくほめるLT会を主催</a>
+          </dd>
           <dt>現在：</dt>
           <dd>👨🏻‍💻バックエンドエンジニア</dd>
           <dd>世の中の「もったいない」を</dd>
@@ -17,12 +24,20 @@
         </dl>
       </div>
       <div class="profile_img flexbox">
-        <img src="../assets/img/current_icon.jpg" alt class="my_pic" />
+        <img
+          src="../assets/img/current_icon.jpg"
+          alt
+          class="my_pic"
+        >
       </div>
     </div>
     <div class="profile_box">
       <div class="about_img flexbox">
-        <img src="../assets/img/my_pic.jpg" alt class="my_pic"/>
+        <img
+          src="../assets/img/my_pic.jpg"
+          alt
+          class="my_pic"
+        >
       </div>
       <div class="flexbox">
         <dl class="detail-profile-left">
@@ -41,11 +56,17 @@
     </div>
 
     <div class="article">
-      <h2 class="article-title">記事紹介</h2>
+      <h2 class="article-title">
+        記事紹介
+      </h2>
       <table>
         <tbody>
           <tr>
-            <a href="https://iwahen.com/article/3723/" target="_blank" class="icon-link">
+            <a
+              href="https://iwahen.com/article/3723/"
+              target="_blank"
+              class="icon-link"
+            >
               エンジニアってどうやったらなれるんですか？を現役エンジニアにインタビューしてみた
             </a>
           </tr>
@@ -57,10 +78,10 @@
 
 <script>
 export default {
-  data() {
-    return {};
+  data () {
+    return {}
   }
-};
+}
 </script>
 
 <style lang="scss">

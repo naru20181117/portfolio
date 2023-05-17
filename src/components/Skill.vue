@@ -4,31 +4,59 @@
       <div class="container">
         <h2>Used Tech</h2>
         <ul class="tech-icons">
-          <li v-for="(badge, i) in first_badges" v-bind:key="i">
-            <b-badge pill variant="light" class="icon-badge">{{badge.name}}</b-badge>
-            <br />
+          <li
+            v-for="(badge, i) in first_badges"
+            :key="i"
+          >
+            <b-badge
+              pill
+              variant="light"
+              class="icon-badge"
+            >
+              {{ badge.name }}
+            </b-badge>
+            <br>
             <img
               :src="'https://cdn.svgporn.com/logos/' + badge.path + '.svg'"
               alt
               class="icon-image"
-            />
+            >
           </li>
         </ul>
         <ul class="tech-icons">
           <h2>Touched Etc.</h2>
-          <li v-for="(badge, i) in second_badges" v-bind:key="i">
-            <b-badge pill variant="light" class="icon-badge">{{badge.name}}</b-badge>
-            <br />
+          <li
+            v-for="(badge, i) in second_badges"
+            :key="i"
+          >
+            <b-badge
+              pill
+              variant="light"
+              class="icon-badge"
+            >
+              {{ badge.name }}
+            </b-badge>
+            <br>
             <img
               :src="'https://cdn.svgporn.com/logos/' + badge.path + '.svg'"
               alt
               class="icon-image"
-            />
+            >
           </li>
           <li>
-            <b-badge pill variant="light" class="icon-badge">VBA</b-badge>
-            <br />
-            <img src="@/assets/img/skill_icon/VBA.svg" alt class="icon-image" />
+            <b-badge
+              pill
+              variant="light"
+              class="icon-badge"
+            >
+              VBA
+            </b-badge>
+            <br>
+            <img
+              src="@/assets/img/skill_icon/VBA.svg"
+              alt
+              class="icon-image"
+            >
           </li>
         </ul>
       </div>
@@ -38,115 +66,115 @@
 
 <script>
 export default {
-  data: function() {
+  data: function () {
     return {
       first_badges: [
         {
-          name: "React",
-          path: "react"
+          name: 'React',
+          path: 'react'
         },
         {
-          name: "Next.js",
-          path: "nextjs"
+          name: 'Next.js',
+          path: 'nextjs'
         },
         {
-          name: "GraphQL",
-          path: "graphql"
+          name: 'GraphQL',
+          path: 'graphql'
         },
         {
-          name: "Vue.js",
-          path: "vue"
+          name: 'Vue.js',
+          path: 'vue'
         },
         {
-          name: "Nuxt.js",
-          path: "nuxt-icon"
+          name: 'Nuxt.js',
+          path: 'nuxt-icon'
         },
         {
-          name: "Ruby",
-          path: "ruby"
+          name: 'Ruby',
+          path: 'ruby'
         },
         {
-          name: "Ruby on Rails",
-          path: "rails"
+          name: 'Ruby on Rails',
+          path: 'rails'
         },
         {
-          name: "HTML5",
-          path: "html-5"
+          name: 'HTML5',
+          path: 'html-5'
         },
         {
-          name: "CSS3",
-          path: "css-3"
+          name: 'CSS3',
+          path: 'css-3'
         },
         {
-          name: "Javascript",
-          path: "javascript"
+          name: 'Javascript',
+          path: 'javascript'
         },
         {
-          name: "Sass",
-          path: "sass"
+          name: 'Sass',
+          path: 'sass'
         },
         {
-          name: "CoffeeScript",
-          path: "coffeescript"
+          name: 'CoffeeScript',
+          path: 'coffeescript'
         },
         {
-          name: "Docker",
-          path: "docker-icon"
-        },
+          name: 'Docker',
+          path: 'docker-icon'
+        }
       ],
       second_badges: [
         {
-          name: "Debian",
-          path: "debian"
+          name: 'Debian',
+          path: 'debian'
         },
         {
-          name: "Linux",
-          path: "linux-tux"
+          name: 'Linux',
+          path: 'linux-tux'
         },
         {
-          name: "AWS",
-          path: "aws"
+          name: 'AWS',
+          path: 'aws'
         },
         {
-          name: "NGINX",
-          path: "nginx"
+          name: 'NGINX',
+          path: 'nginx'
         },
         {
-          name: "Capistrano",
-          path: "capistrano"
+          name: 'Capistrano',
+          path: 'capistrano'
         },
         {
-          name: "GAS",
-          path: "google-developers"
+          name: 'GAS',
+          path: 'google-developers'
         },
         {
-          name: "Vim",
-          path: "vim"
+          name: 'Vim',
+          path: 'vim'
         },
         {
-          name: "VS code",
-          path: "visual-studio-code"
+          name: 'VS code',
+          path: 'visual-studio-code'
         },
         {
-          name: "Firebase",
-          path: "firebase"
+          name: 'Firebase',
+          path: 'firebase'
         },
         {
-          name: "PHP",
-          path: "php"
+          name: 'PHP',
+          path: 'php'
         },
         {
-          name: "Flutter",
-          path: "flutter"
+          name: 'Flutter',
+          path: 'flutter'
         },
         {
-          name: "Golang",
-          path: "gopher"
+          name: 'Golang',
+          path: 'gopher'
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style lang="scss">
