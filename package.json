@@ -32,6 +32,7 @@
     "@vue/cli-plugin-eslint": "^5.0.8",
     "@vue/cli-plugin-router": "^5.0.8",
     "@vue/cli-service": "^5.0.8",
+    "@vue/compiler-sfc": "3.3.2",
     "babel-eslint": "^10.0.3",
     "eslint-plugin-vue": "^5.0.0",
     "eslint-webpack-plugin": "^4.0.0",
@@ -41,7 +42,6 @@
     "sass-loader": "^10.0.0",
     "vue-cli-plugin-vuetify": "~2.5.8",
     "vue-svg-loader": "^0.15.0",
-    "vue-template-compiler": "^2.6.10",
     "vuetify-loader": "^1.7.0"
   },
   "eslintConfig": {
