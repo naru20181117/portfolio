@@ -1,8 +1,16 @@
 <template>
-  <nav id="gnav" class="header-nav">
+  <nav
+    id="gnav"
+    class="header-nav"
+  >
     <ul>
-      <li v-for="(route, r) in routes" v-bind:key="r">
-        <router-link :to="route.link">{{ route.name }}</router-link>
+      <li
+        v-for="(route, r) in routes"
+        :key="r"
+      >
+        <router-link :to="route.link">
+          {{ route.name }}
+        </router-link>
       </li>
     </ul>
   </nav>
@@ -10,34 +18,34 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       routes: [
         {
-          link: "/",
+          link: '/',
           name: 'Home'
         },
         {
-          link: "/about",
+          link: '/about',
           name: 'about'
         },
         {
-          link: "/skill",
+          link: '/skill',
           name: 'skill'
         },
         {
-          link: "/career",
+          link: '/career',
           name: 'career'
-        },{
-          link: "/portfolio",
+        }, {
+          link: '/portfolio',
           name: 'portfolio'
         },
         {
-          link: "/social",
+          link: '/social',
           name: 'social'
         }
       ]
     }
-  },
+  }
 }
 </script>

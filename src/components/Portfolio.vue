@@ -1,17 +1,27 @@
 <template>
   <div id="portfolio">
     <div class="portfolio-left">
-      <div v-for="(file, i) in left_files" v-bind:key="i">
+      <div
+        v-for="(file, i) in left_files"
+        :key="i"
+      >
         <div class="card">
-          <b-card no-body class="overflow-hidden" style="max-width: 540px;">
+          <b-card
+            no-body
+            class="overflow-hidden"
+            style="max-width: 540px;"
+          >
             <b-row no-gutters>
               <b-col md="6">
-                <a :href="checked_url(file)" target="_blank">
+                <a
+                  :href="checked_url(file)"
+                  target="_blank"
+                >
                   <b-card-img
                     :src="'https://i.gyazo.com/' + file.image"
                     alt="Image from Gyazo"
                     class="rounded-10"
-                  ></b-card-img>
+                  />
                 </a>
               </b-col>
 
@@ -21,10 +31,12 @@
                     {{ file.detail1 }}<br>{{ file.detail2 }}
                   </b-card-text>
                   <b-button
-                  :href="checked_url(file)"
-                  target="_blank"
-                  variant="warning"
-                >{{file.git_set ? 'Go Github' : 'Go Site'}}</b-button>
+                    :href="checked_url(file)"
+                    target="_blank"
+                    variant="warning"
+                  >
+                    {{ file.git_set ? 'Go Github' : 'Go Site' }}
+                  </b-button>
                 </b-card-body>
               </b-col>
             </b-row>
@@ -34,9 +46,16 @@
     </div>
 
     <div class="portfolio-right">
-      <div v-for="(file, i) in right_files" v-bind:key="i">
+      <div
+        v-for="(file, i) in right_files"
+        :key="i"
+      >
         <div class="card">
-          <b-card no-body class="overflow-hidden" style="max-width: 540px;">
+          <b-card
+            no-body
+            class="overflow-hidden"
+            style="max-width: 540px;"
+          >
             <b-row no-gutters>
               <b-col md="6">
                 <b-card-body :title="file.title">
@@ -44,19 +63,24 @@
                     {{ file.detail1 }}<br>{{ file.detail2 }}
                   </b-card-text>
                   <b-button
-                  :href="file.git_url == 'undefined' ? file.url : 'https://github.com/naru20181117/' + file.git_url"
-                  target="_blank"
-                  variant="warning"
-                >Go Github</b-button>
+                    :href="file.git_url == 'undefined' ? file.url : 'https://github.com/naru20181117/' + file.git_url"
+                    target="_blank"
+                    variant="warning"
+                  >
+                    Go Github
+                  </b-button>
                 </b-card-body>
               </b-col>
               <b-col md="6">
-                <a :href="'https://' + file.url" target="_blank">
+                <a
+                  :href="'https://' + file.url"
+                  target="_blank"
+                >
                   <b-card-img
                     :src="'https://i.gyazo.com/' + file.image + '.gif'"
                     alt="Image from Gyazo"
                     class="rounded-10"
-                  ></b-card-img>
+                  />
                 </a>
               </b-col>
             </b-row>
@@ -64,103 +88,102 @@
         </div>
       </div>
     </div>
-
   </div>
 </template>
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       left_files: [
         {
-          title: "ideee（アイディー）",
-          url: "ideee.tech/about?utm_source=portfolio&utm_medium=page&utm_id=portfolio",
-          image: "37acc2382c17c7930b21afb97fd91be3.gif",
-          detail1: "Rails",
-          detail2: "アイデアとエンジニアのマッチング💡本腰アプリ",
+          title: 'ideee（アイディー）',
+          url: 'ideee.tech/about?utm_source=portfolio&utm_medium=page&utm_id=portfolio',
+          image: '37acc2382c17c7930b21afb97fd91be3.gif',
+          detail1: 'Rails',
+          detail2: 'アイデアとエンジニアのマッチング💡本腰アプリ'
         },
         {
-          title: "情報発信用ブログ",
-          url: "naruhero.site",
-          image: "f39ecfdbe36df1f9b0df6bed1c22104d.gif",
-          detail1: "Nuxt・Contentful",
-          detail2: "プレゼン機能も搭載",
+          title: '情報発信用ブログ',
+          url: 'naruhero.site',
+          image: 'f39ecfdbe36df1f9b0df6bed1c22104d.gif',
+          detail1: 'Nuxt・Contentful',
+          detail2: 'プレゼン機能も搭載'
         },
         {
-          title: "診断アプリ",
-          url: "docs.google.com/forms/d/e/1FAIpQLSdiMQs5493z7cEAIJysqDup4lXGbf-P4bfctavzoT1ECeraog/viewform",
-          git_url: "gas_5love_language_app",
-          image: "6fcd82f46598f0e55909217adeb2a143.gif",
-          detail1: "Google Apps Script",
-          detail2: "5つの愛の言葉という本を参考に、その人の思考方法を図れるアプリ",
+          title: '診断アプリ',
+          url: 'docs.google.com/forms/d/e/1FAIpQLSdiMQs5493z7cEAIJysqDup4lXGbf-P4bfctavzoT1ECeraog/viewform',
+          git_url: 'gas_5love_language_app',
+          image: '6fcd82f46598f0e55909217adeb2a143.gif',
+          detail1: 'Google Apps Script',
+          detail2: '5つの愛の言葉という本を参考に、その人の思考方法を図れるアプリ',
           git_set: true
         },
         {
-          title: "Portfolio Site",
-          url: "naruhiro-portfolio.firebaseapp.com",
-          git_url: "portfolio",
-          image: "da369ef9d418d939bcdab7a6cbd0fdae.png",
-          detail1: "Vue.js・Firebase",
-          detail2: "このポートフォリオサイト",
+          title: 'Portfolio Site',
+          url: 'naruhiro-portfolio.firebaseapp.com',
+          git_url: 'portfolio',
+          image: 'da369ef9d418d939bcdab7a6cbd0fdae.png',
+          detail1: 'Vue.js・Firebase',
+          detail2: 'このポートフォリオサイト',
           git_set: true
         },
         {
-          title: "小学生漢字テストpdf生成アプリ",
-          url: "https://kanjitest.herokuapp.com/",
-          git_url: "kanji_test",
-          image: "bf5cd792c2b2a978a1768b610fab17fc.gif",
-          detail1: "Rails(Prawn)",
-          detail2: "ネットで良い感じのテストが見つからなかったので作った",
+          title: '小学生漢字テストpdf生成アプリ',
+          url: 'https://kanjitest.herokuapp.com/',
+          git_url: 'kanji_test',
+          image: 'bf5cd792c2b2a978a1768b610fab17fc.gif',
+          detail1: 'Rails(Prawn)',
+          detail2: 'ネットで良い感じのテストが見つからなかったので作った',
           git_set: true
-        },
+        }
       ],
       right_files: [
         {
-          title: "Play with your Buddy",
-          url: "playwithyourbuddy.com",
-          git_url: "play_with_your_buddy",
-          image: "ca7b67bed097cfacbf245faed09b5ecb",
-          detail1: "React",
-          detail2: "ペットとあと何回遊べるか確認するアプリ"
+          title: 'Play with your Buddy',
+          url: 'playwithyourbuddy.com',
+          git_url: 'play_with_your_buddy',
+          image: 'ca7b67bed097cfacbf245faed09b5ecb',
+          detail1: 'React',
+          detail2: 'ペットとあと何回遊べるか確認するアプリ'
         },
         {
-          title: "Hashtag Keeper（Instagram用）",
-          url: "hashtags-keeper.web.app",
-          git_url: "hashtags_keeper",
-          image: "df83935aec8bd50378ed9b03ed3c8015",
-          detail1: "Vue・Firebase",
-          detail2: "Instaでの＃などを保存するアプリ(開発途中)"
+          title: 'Hashtag Keeper（Instagram用）',
+          url: 'hashtags-keeper.web.app',
+          git_url: 'hashtags_keeper',
+          image: 'df83935aec8bd50378ed9b03ed3c8015',
+          detail1: 'Vue・Firebase',
+          detail2: 'Instaでの＃などを保存するアプリ(開発途中)'
         },
         {
-          title: "Hashtag Keeper(Twitter)",
-          url: "hashtag-keeper.herokuapp.com",
-          git_url: "portfolio",
-          image: "574a5037b377e3f29ddef91166a52842",
-          detail1: "Rails/JS",
-          detail2: "Twitterの＃を保存するアプリ"
+          title: 'Hashtag Keeper(Twitter)',
+          url: 'hashtag-keeper.herokuapp.com',
+          git_url: 'portfolio',
+          image: '574a5037b377e3f29ddef91166a52842',
+          detail1: 'Rails/JS',
+          detail2: 'Twitterの＃を保存するアプリ'
         },
         {
-          title: "食べたい物で身体が何を欲しているかわかるアプリ",
-          url: "http://tabetai.herokuapp.com/",
-          git_url: "snippet",
-          image: "8f46baefbf93eba7f386ef091e7d64b4",
-          detail1: "Rails/Vue",
-          detail2: "ふと食べたい物があったときに浮かんで作ったアプリ"
+          title: '食べたい物で身体が何を欲しているかわかるアプリ',
+          url: 'http://tabetai.herokuapp.com/',
+          git_url: 'snippet',
+          image: '8f46baefbf93eba7f386ef091e7d64b4',
+          detail1: 'Rails/Vue',
+          detail2: 'ふと食べたい物があったときに浮かんで作ったアプリ'
         },
         {
-          title: "メモ管理アプリ",
-          url: "onetask1.herokuapp.com",
-          git_url: "onetask",
-          image: "b0726715def42c1c9fc59464e8ac42a9",
-          detail1: "Rails/JS",
-          detail2: "Ruby/Railsを盛り沢山使ったアプリ"
+          title: 'メモ管理アプリ',
+          url: 'onetask1.herokuapp.com',
+          git_url: 'onetask',
+          image: 'b0726715def42c1c9fc59464e8ac42a9',
+          detail1: 'Rails/JS',
+          detail2: 'Ruby/Railsを盛り沢山使ったアプリ'
         }
       ]
-    };
+    }
   },
   methods: {
-    checked_url(file) {
+    checked_url (file) {
       if (file.git_set) {
         return 'https://github.com/naru20181117/' + file.git_url
       } else {
@@ -168,7 +191,7 @@ export default {
       }
     }
   }
-};
+}
 </script>
 
 <style lang="scss">
