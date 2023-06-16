@@ -1,26 +1,6 @@
 <template>
   <div id="about">
     <div class="profile_box">
-      <div class="flexbox">
-        <h2 class="profile_title">Who am I</h2>
-        <dl class="detail-profile-right">
-          <dt>趣味：</dt>
-          <dd>エンジニアコミュニティ運営</dd>
-          <dd><a href="https://tonihome.connpass.com/" target="_blank">とにかくほめるLT会を主催</a></dd>
-          <dt>現在：</dt>
-          <dd>👨🏻‍💻バックエンドエンジニア</dd>
-          <dd>世の中の「もったいない」を</dd>
-          <dd>ITの力で無くすためサービスづくり中</dd>
-          <dt>余談：</dt>
-          <dd>🏠シェアハウスに住む</dd>
-          <dd>🇯🇵🇺🇸🇪🇸日米西のトリリンガル</dd>
-        </dl>
-      </div>
-      <div class="profile_img flexbox">
-        <img src="../assets/img/current_icon.jpg" alt class="my_pic" />
-      </div>
-    </div>
-    <div class="profile_box">
       <div class="about_img flexbox">
         <img src="../assets/img/my_pic.jpg" alt class="my_pic"/>
       </div>
@@ -35,10 +15,31 @@
           <dt>Ability</dt>
           <dd>英語 / バスケ / 車・バイクの運転 / 人見知りしない</dd>
           <dt>Recent Hobby</dt>
-          <dd>👨🏻‍💻競プロ / 🎲ボードゲーム / 🎁プレゼン / 🤖IoT</dd>
+          <dd>👨🏻‍💻サービス開発 / 🎲ボードゲーム / 🎁プレゼン / 🤖IoT</dd>
         </dl>
       </div>
     </div>
+    <div class="profile_box">
+      <div class="flexbox">
+        <h2 class="profile_title">Who am I</h2>
+        <dl class="detail-profile-right">
+          <dt>趣味：</dt>
+          <dd>エンジニアコミュニティ運営</dd>
+          <dd><a href="https://tonihome.connpass.com/" target="_blank">とにかくほめるLT会を主催</a></dd>
+          <dt>現在：</dt>
+          <dd>👨🏻‍💻バックエンドエンジニア</dd>
+          <dd>世の中の「もったいない」を</dd>
+          <dd>ITの力で無くすためサービスづくり中</dd>
+          <dt>余談：</dt>
+          <dd>🏠シェアハウス好き</dd>
+          <dd>🇯🇵🇺🇸🇪🇸日米西のトリリンガル</dd>
+        </dl>
+      </div>
+      <div class="profile_img flexbox">
+        <img src="../assets/img/current_icon.jpg" alt class="my_pic" />
+      </div>
+    </div>
+
 
     <div class="article">
       <h2 class="article-title">記事紹介</h2>

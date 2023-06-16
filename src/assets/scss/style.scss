@@ -137,8 +137,10 @@ footer {
 }
 
 .sns-box {
+  display: flex;
   margin-top: 20px;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .sns-link {
@@ -167,6 +169,16 @@ footer {
   display: inline-block;
   width: 1.2em;
   height: 1.2em;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.facebook-icon::before {
+  content: "";
+  background-image: url("../img/facebook.svg");
+  display: inline-block;
+  width: 1em;
+  height: 1em;
   background-size: contain;
   vertical-align: middle;
 }
