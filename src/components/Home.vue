@@ -3,11 +3,12 @@
     <div class="image">
       <img src="../assets/logo.png" alt class="lp-img"/>
     </div>
+    <h2>なる</h2>
 
     <!-- message -->
     <ul class="situation">
       <li>
-        <h3 class="situation-title">【現在の状況】</h3>
+        <h3 class="situation-title">【最近の状況】</h3>
       </li>
       <li>
         <TextAnime :autoplay="autoplay" />
@@ -88,7 +89,7 @@ export default {
     width:75%;
     .lp-img {
       width: 100%;
-      max-width: 60vw;
+      max-width: 40vw;
       height: auto;
       align: center;
     }

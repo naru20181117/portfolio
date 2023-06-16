@@ -16,18 +16,30 @@
     </transition>
 
     <div class="sns-box">
-      <a href="https://twitter.com/1026NT" target="_blank" class="sns-link">
-        twitter
-        <i class="fab fa-twitter-square"></i>
-      </a>
-      <a href="https://github.com/naru20181117" target="_blank" class="sns-link">
-        github
-        <i class="fab github-icon"></i>
-      </a>
-      <a href="https://qiita.com/naruqiita" target="_blank" class="sns-link">
-        Qiita
-        <img src="@/assets/img/qiita_favicon.png" alt class="qiita_pic" />
-      </a>
+      <div>
+        <a href="https://twitter.com/1026NT" target="_blank" class="sns-link">
+          twitter
+          <i class="fab fa-twitter-square"></i>
+        </a>
+      </div>
+      <div>
+        <a href="https://www.facebook.com/naruhiro.tsukazaki" target="_blank" class="sns-link">
+          facebook
+          <i class="fab facebook-icon"></i>
+        </a>
+      </div>
+      <div>
+        <a href="https://github.com/naru20181117" target="_blank" class="sns-link">
+          github
+          <i class="fab github-icon"></i>
+        </a>
+      </div>
+      <div>
+        <a href="https://qiita.com/naruqiita" target="_blank" class="sns-link">
+          Qiita
+          <img src="@/assets/img/qiita_favicon.png" alt class="qiita_pic" />
+        </a>
+      </div>
     </div>
     <footer>
       <div class="copyright-box">©️ 2020 naru All Rights Reserved.</div>
