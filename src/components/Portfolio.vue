@@ -118,7 +118,7 @@ export default {
       right_files: [
         {
           title: "Play with your Buddy",
-          url: "https://play-with-your-buddy.vercel.app",
+          url: "play-with-your-buddy.vercel.app",
           git_url: "play_with_your_buddy",
           image: "ca7b67bed097cfacbf245faed09b5ecb",
           detail1: "React",
