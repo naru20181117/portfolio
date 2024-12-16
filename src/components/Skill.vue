@@ -70,20 +70,8 @@ export default {
           path: "rails"
         },
         {
-          name: "HTML5",
-          path: "html-5"
-        },
-        {
-          name: "CSS3",
-          path: "css-3"
-        },
-        {
-          name: "Javascript",
-          path: "javascript"
-        },
-        {
-          name: "Sass",
-          path: "sass"
+          name: "TypeScript",
+          path: "typescript-icon"
         },
         {
           name: "CoffeeScript",
@@ -93,8 +81,32 @@ export default {
           name: "Docker",
           path: "docker-icon"
         },
+        {
+          name: "Cloudflare",
+          path: "cloudflare-icon"
+        },
+        {
+          name: "Auth0",
+          path: "auth0-icon"
+        },
+        {
+          name: "Cloudinary",
+          path: "cloudinary-icon"
+        }
       ],
       second_badges: [
+        {
+          name: "PHP",
+          path: "php"
+        },
+        {
+          name: "Flutter",
+          path: "flutter"
+        },
+        {
+          name: "Golang",
+          path: "gopher"
+        },
         {
           name: "Debian",
           path: "debian"
@@ -108,41 +120,17 @@ export default {
           path: "aws"
         },
         {
-          name: "NGINX",
-          path: "nginx"
-        },
-        {
           name: "Capistrano",
           path: "capistrano"
-        },
-        {
-          name: "GAS",
-          path: "google-developers"
         },
         {
           name: "Vim",
           path: "vim"
         },
         {
-          name: "VS code",
-          path: "visual-studio-code"
+          name: "OpenAI API",
+          path: "openai-icon"
         },
-        {
-          name: "Firebase",
-          path: "firebase"
-        },
-        {
-          name: "PHP",
-          path: "php"
-        },
-        {
-          name: "Flutter",
-          path: "flutter"
-        },
-        {
-          name: "Golang",
-          path: "gopher"
-        }
       ]
     };
   }

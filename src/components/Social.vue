@@ -63,34 +63,29 @@
           <div class='boad mt-4'>
             <div v-if="note_acces">
               <a v-for="(note, i) in notes"
-                  v-bind:key="i" :href="note.noteUrl">
+                :key="i" :href="note.link" target="_blank">
                 <b-card
                   class="mx-auto pa-2 mb-3"
                   style="max-width: 450px;"
-                  :title="note.name"
-                  :img-src="note.eyecatch"
+                  :title="note.title"
+                  :img-src="note.mediaThumbnail"
                   img-alt="Card image" img-bottom>
-                  <b-badge variant="info" v-for="(tag, i) in note.hashtags" v-bind:key="i" class="mr-1">
-                    {{tag.hashtag.name}}
-                  </b-badge>
                   <br>
                   <v-spacer></v-spacer>
-                  <span>スキ <b>{{note.likeCount }}</b></span><br>
-                  <span>{{note.publishAt | moment }}</span>
+                  <span>{{ note.pubDate | moment }}</span>
                   <br>
                 </b-card>
               </a>
             </div>
             <div v-else>
               <h2 class="mb-5">
-                APIのアクセスができないようです<br>
-                ブラウザにて<br>
-                CORSエラーが発生しています
+                RSSフィードの取得に失敗しました<br>
+                ネットワーク接続を確認してください
               </h2>
               <img src="@/assets/img/mononoke.jpg" alt class="error_pic" />
               <v-spacer></v-spacer>
-              <p>そなたは美しい。CORS用拡張機能を使え</p>
-              <p>ページはこちら👇👇👇</p>
+              <p>エラーが発生しました。</p>
+              <p>ページはこちら�👇👇</p>
               <v-spacer></v-spacer>
               <h1>
                 <a :href="note_user_url">{{note_user_url}}</a>
@@ -121,54 +116,61 @@ export default {
     return {
       user_id: "1026NT",
       qiita_acces: true,
-      note_acces: true,
       qiita_user_url: "https://qiita.com/naruqiita",
-      note_user_url: "https://note.com/naru_note",
       qiita_error_url: "@/assets/img/howl.jpg",
       qiitas: null,
-      notes: null,
       qiita_url: "https://qiita.com/api/v2",
-      // note_url: "https://note.com/api/v2",
-      // query_params: "?kind=note&page=1",
-      cors_batch_url: "https://cloudflare-app.naru-cloundflare.workers.dev/"
+      note_acces: true,
+      note_user_url: "https://note.com/naru_note",
+      notes: [],
+      rss_url: "https://note.com/naru_note/rss",
     }
   },
   filters: {
-    /**
-     * @param {Date} value
-     * @param {string} format
-     */
     moment(value) {
       return moment(value).format('YYYY / MM / DD');
     }
   },
   mounted() {
+    this.fetchNotes();
     axios
-      .get(
-        this.qiita_url + "/users/naruqiita/items", {
-          params: {
-            page: 1,
-            per_page: 5
-          }
+      .get(`${this.qiita_url}/users/naruqiita/items`, {
+        params: {
+          page: 1,
+          per_page: 5
         }
-      )
+      })
       .then(response => {
         this.qiitas = response.data
-        }
-      ).catch(error => {
-        console.log(error.response)
-        this.qiita_acces = false
-      }),
-    axios
-      // .get(this.note_url + "/creators/naru_note/contents" + this.query_params)
-      .get(this.cors_batch_url)
-      .then(response => {
-        this.notes = response.data.data.contents
-        })
+      })
       .catch(error => {
         console.log(error.response)
-        this.note_acces = false
+        this.qiita_acces = false
       })
+  },
+  methods: {
+    async fetchNotes() {
+      try {
+        const api_url = 'https://api.rss2json.com/v1/api.json';
+        const response = await axios.get(api_url, {
+          params: {
+            rss_url: this.rss_url
+          }
+        });
+
+        const items = response.data.items.slice(0, 5); // 最新5件を取得
+        this.notes = items.map(item => ({
+          title: item.title,
+          link: item.link,
+          pubDate: item.pubDate,
+          description: item.description,
+          mediaThumbnail: item.thumbnail || '',
+        }));
+      } catch (error) {
+        console.error(error);
+        this.note_acces = false;
+      }
+    }
   }
 };
 </script>

@@ -5,11 +5,9 @@
     </div>
     <h2>なる</h2>
 
+    <h3 class="situation-title">【最近の状況】</h3>
     <!-- message -->
     <ul class="situation">
-      <li>
-        <h3 class="situation-title">【最近の状況】</h3>
-      </li>
       <li>
         <TextAnime :autoplay="autoplay" />
         <label>

@@ -13,7 +13,7 @@
           <dt>Overseas</dt>
           <dd>🌏17ヶ国(大学時代に訪れた国の数)</dd>
           <dt>Ability</dt>
-          <dd>英語 / バスケ / 車・バイクの運転 / 人見知りしない</dd>
+          <dd>英語 / イベント立ち上げ・司会 / 車・バイクの運転 / 人見知りしない</dd>
           <dt>Recent Hobby</dt>
           <dd>👨🏻‍💻サービス開発 / 🎲ボードゲーム / 🎁プレゼン / 🤖IoT</dd>
         </dl>
@@ -24,13 +24,14 @@
         <h2 class="profile_title">Who am I</h2>
         <dl class="detail-profile-right">
           <dt>趣味：</dt>
-          <dd>エンジニアコミュニティ運営</dd>
-          <dd><a href="https://tonihome.connpass.com/" target="_blank">とにかくほめるLT会を主催</a></dd>
+          <dd><a href="https://japanglish.connpass.com/" target="_blank">Japanglish Tokyoを主催</a></dd>
+          <dd>エンジニア用英語LTコミュニティ</dd>
           <dt>現在：</dt>
-          <dd>👨🏻‍💻バックエンドエンジニア</dd>
+          <dd>👨🏻‍💻フルスタックエンジニア</dd>
           <dd>世の中の「もったいない」を</dd>
           <dd>ITの力で無くすためサービスづくり中</dd>
           <dt>余談：</dt>
+          <dd>👶一児のパパ</dd>
           <dd>🏠シェアハウス好き</dd>
           <dd>🇯🇵🇺🇸🇪🇸日米西のトリリンガル</dd>
         </dl>

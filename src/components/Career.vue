@@ -8,6 +8,36 @@
             <tbody>
               <tr>
                 <td class="history">
+                  <p class="history-left">2023/5</p>
+                  <p class="history-right"><b>~現在</b></p>
+                </td>
+                <td class="history-section">
+                  👀APMサービスSentryのSolution Engineer
+                  <br />SNS運営や設計、イベントの運営・司会・スポンサー業
+                </td>
+              </tr>
+              <tr>
+                <td class="history">
+                  <p class="history-left">2023/8</p>
+                  <p class="history-right"><b>~現在</b></p>
+                </td>
+                <td class="history-section">
+                  📣コーチングDXツールBrightyの開発・運営
+                  <br />👫：10名 🛠：TS+next.js × Rails+GraphQL
+                </td>
+              </tr>
+              <tr>
+                <td class="history">
+                  <p class="history-left">2023/6</p>
+                  <p class="history-right">~2023/11</p>
+                </td>
+                <td class="history-section">
+                  ✈️旅行系AIサービスの新規開発
+                  <br />👫：4名 🛠：Vue.js × Rails
+                </td>
+              </tr>
+              <tr>
+                <td class="history">
                   <p class="history-left">2022/7</p>
                   <p class="history-right">~2023/3</p>
                 </td>
@@ -29,7 +59,7 @@
               <tr>
                 <td class="history">
                   <p class="history-left">2022/1</p>
-                  <p class="history-right"><b>~現在</b></p>
+                  <p class="history-right"><b>~2023/5</b></p>
                 </td>
                 <td class="history-section">
                   📞BtoCラインビジネス事業にてバッグエンドを担当

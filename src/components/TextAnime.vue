@@ -1,8 +1,16 @@
 <template>
   <div class="TextAnime">
-    <!-- <textarea v-model.lazy="editor" style="width:80%;height:40px;"></textarea> -->
     <transition-group tag="div" class="title">
-      <span v-for="el in text" :key="el.id" class="item" v-text="el.text" />
+      <!-- <span v-for="el in text" :key="el.id" class="item" v-text="el.text" /> -->
+      <template v-for="el in text">
+        <span
+          v-if="!el.isNewline"
+          :key="el.id"
+          class="item"
+          v-text="el.text"
+        />
+        <br v-else :key="el.id" />
+      </template>
     </transition-group>
   </div>
 </template>
@@ -16,11 +24,7 @@ export default {
     return {
       timer: null,
       index: 0,
-      original: [
-        "エンジニア5年目 / フリーランスエンジニア",
-        "Rubyメインサーバサイドエンジニア / ideee代表",
-        "新規サービス立ち上げなどのゼロイチを好んで活動中"
-      ],
+      original: [],
       messages: [],
       text: ""
     };
@@ -49,13 +53,36 @@ export default {
     convText(text) {
       const alms = {};
       const result = text.split("").map(el => {
-        alms[el] = alms[el] ? ++alms[el] : 1;
-        return { id: `${el}_${alms[el]}`, text: el };
+        if (el === "\n") {
+          return { id: `newline_${Math.random()}`, isNewline: true };
+        } else {
+          alms[el] = alms[el] ? ++alms[el] : 1;
+          return { id: `${el}_${alms[el]}`, text: el };
+        }
       });
       return Object.freeze(result); // 監視しない
     }
   },
   created() {
+    const startDate = new Date(2018, 8); // 2018年9月（JavaScriptの月は0始まりなので8）
+    const today = new Date();
+    let years = today.getFullYear() - startDate.getFullYear();
+
+    // 月と日の差を考慮
+    const monthDifference = today.getMonth() - startDate.getMonth();
+    if (
+      monthDifference < 0 ||
+      (monthDifference === 0 && today.getDate() < startDate.getDate())
+    ) {
+      years--;
+    }
+    years++; // 「◯年目」は開始年から+1する
+
+    this.original = [
+      `エンジニア${years}年目\n/\nフリーランスエンジニア`,
+      "1人でWebサービス開発から運営まで\n/\n複数Webサービス運営",
+      "新規サービス立ち上げなど\n/\nゼロイチを好んで活動中"
+    ];
     this.messages = this.original.map(el => this.convText(el));
     this.text = this.messages[0];
     this.ticker();

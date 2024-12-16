@@ -73,12 +73,19 @@ export default {
   data() {
     return {
       left_files: [
+      {
+          title: "Brighty（ブライティ）",
+          url: "brighty.site/",
+          image: "6632f9f17ae7db7829a32f4da3662e01.gif",
+          detail1: "Rails・Next.js",
+          detail2: "コーチのためのDXツール",
+        },
         {
           title: "ideee（アイディー）",
           url: "ideee.tech/about?utm_source=portfolio&utm_medium=page&utm_id=portfolio",
           image: "37acc2382c17c7930b21afb97fd91be3.gif",
-          detail1: "Rails",
-          detail2: "アイデアとエンジニアのマッチング💡本腰アプリ",
+          detail1: "Rails・Next.js",
+          detail2: "アイデアとエンジニアのマッチング💡",
         },
         {
           title: "情報発信用ブログ",
